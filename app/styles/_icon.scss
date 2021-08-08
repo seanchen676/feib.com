@@ -1,0 +1,89 @@
+i{
+    &.common-icon{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 30px;
+        display: block;
+        &.icon-lg{
+            width: 38px;
+        }
+        &.icon-sm{
+            width: 20px;
+        }
+        &::after{
+            content: "";
+            display: block;
+            padding-top: 100%;
+        }
+        &.sidebar-order{
+            background-image: url('../images/icon/sidebar_order.svg');
+        }
+        &.sidebar-dividend{
+            background-image: url('../images/icon/sidebar_dividend.svg');
+        }
+        &.sidebar-value{
+            background-image: url('../images/icon/sidebar_value.svg');
+        }
+        &.sidebar-account{
+            background-image: url('../images/icon/sidebar_account.svg');
+        }
+        &.modal-icon{
+            background-image: url('../images/icon/modal.svg');
+        }
+        &.section-fund-ranking{
+            background-image: url('../images/icon/section_ranking.svg');
+        }
+        &.calculator-icon{
+            background-image: url('../images/icon/calculator.svg');
+        }
+        &.filter-icon{
+            background-image: url('../images/icon/filter.svg');
+        }
+        &.community-icon{
+            background-image: url('../images/icon/community.svg');
+        }
+        &.section-news{
+            background-image: url('../images/icon/news.svg');
+        }
+        &.section-board{
+            background-image: url('../images/icon/board.svg');
+        }
+        &.home{
+            background-image: url('../images/icon/home.svg');
+        }
+        &.menu-big{
+            background-image: url('../images/icon/menu_big.svg');
+            margin-bottom: 3px;
+        }
+        &.menu-sm{
+            background-image: url('../images/icon/menu_small.svg');
+            margin-bottom: 1px;
+        }
+        &.menu-movie{
+            background-image: url('../images/icon/menu_movie.svg');
+            margin-bottom: 3px;
+        }
+        &.menu-top10{
+            background-image: url('../images/icon/menu_top10.svg');
+        }
+        &.menu-top3{
+            background-image: url('../images/icon/menu_top3.svg');
+        }
+        &.pdf{
+            background-image: url('../images/icon/pdf.svg');
+        }
+        &.contact{
+            background-image: url('../images/icon/contact.svg');
+        }
+        &.storeLocator{
+            background-image: url('../images/icon/storeLocator.svg');
+        }
+        &.youtube{
+            background-image: url('../images/icon/youtube.svg');
+        }
+        &.line{
+            background-image: url('../images/icon/line.svg');
+        }
+    }
+}

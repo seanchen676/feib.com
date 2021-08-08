@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+a{
+    color: #544545;
+    text-decoration: none;
+    &:hover{
+        color: #544545;
+        text-decoration: none;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    li{
+        list-style: none;
+        &:focus{
+            outline: none;
+        }
+    }
+}
+
+body{
+    font-family: 'Montserrat','微軟正黑體', sans-serif;
+    color: #555;
+    overflow-x: hidden;
+
+}
+
+@for $i from 0 through 8 {
+    .pd-#{$i}{
+        padding: $i*5px !important;
+    }
+    .pdx-#{$i}{
+        padding-right: $i*5px !important;
+        padding-left: $i*5px !important;
+    }
+    .pdy-#{$i}{
+        padding-top: $i*5px !important;
+        padding-bottom: $i*5px !important;
+    }
+    .pdt-#{$i}{
+        padding-top: $i*5px !important;
+    }
+    .pdr-#{$i}{
+        padding-right: $i*5px !important;
+    }
+    .pdb-#{$i}{
+        padding-bottom: $i*5px !important;
+    }
+    .pdl-#{$i}{
+        padding-left: $i*5px !important;
+    }
+    .mg-#{$i}{
+        margin: $i*5px !important;
+    }
+    .mgx-#{$i}{
+        margin-right: $i*5px !important;
+        margin-left: $i*5px !important;
+    }
+    .mgy-#{$i}{
+        margin-top: $i*5px !important;
+        margin-bottom: $i*5px !important;
+    }
+    .mgt-#{$i}{
+        margin-top: $i*5px !important;
+    }
+    .mgr-#{$i}{
+        margin-right: $i*5px !important;
+    }
+    .mgb-#{$i}{
+        margin-bottom: $i*5px !important;
+    }
+    .mgl-#{$i}{
+        margin-left: $i*5px !important;
+    }
+}
+
+button, input, select {
+    -moz-appearance: none;
+     -webkit-appearance: none;
+     appearance: none;
+}
+
+select::-ms-expand {
+    display: none;
+}
+input::-ms-clear {
+    display: none;
+}

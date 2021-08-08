@@ -1,0 +1,1809 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no, viewport-fit=cover' name='viewport' />
+        ##include('./components/meta.html', { "title": "遠東商銀 - 投資理財網", "description": "",
+        "keyword": "", "url": "", "share-image": "" })
+
+        <link rel="stylesheet" href="./lib/swiper/swiper.min.css"/>
+        <link rel="stylesheet" href="./lib/rangeSlider/rangeslider.css">
+        <!-- build:css ./styles/app.css -->
+        <link rel="stylesheet" href="./styles/app.css">
+        <!-- endbuild -->
+        
+        <script src="./lib/swiper/swiper.min.js"></script>
+        <script src="./lib/rangeSlider/rangeslider.min.js"></script>
+
+        <!-- build:js ./scripts/index.js -->
+        <script src="./scripts/index.js"></script>
+         <!-- endbuild -->
+    </head>
+    <body>
+        <div class="home-page">
+
+            <!-- header -->
+            ##include('./components/header.html')
+
+            <!-- PC Swiper -->
+            <div class="swiper-container swiper-container-pc">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide-active" style="background-image: url(./images/banner/banner_pc.jpg);"></div>
+                    <div class="swiper-slide" style="background-image: url(./images/banner/banner_pc.jpg);"></div>
+                    <div class="swiper-slide" style="background-image: url(./images/banner/banner_pc.jpg);"></div>
+                    <div class="swiper-slide" style="background-image: url(./images/banner/banner_pc.jpg);"></div>
+                    <div class="swiper-slide" style="background-image: url(./images/banner/banner_pc.jpg);"></div>
+                    <div class="swiper-slide" style="background-image: url(./images/banner/banner_pc.jpg);"></div>
+                    <div class="swiper-slide" style="background-image: url(./images/banner/banner_pc.jpg);"></div>
+                </div>
+                <div class="swiper-bundle-container">
+                    <div class="swiper-button-prev"></div>
+                    <span class="swiper-count">01</span>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+
+            <!-- Mobile Swiper -->
+            <div class="swiper-container swiper-container-mobile">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide-active" style="background-image: url(./images/banner/banner_mobile.jpg);"></div>
+                    <div class="swiper-slide" style="background-image: url(./images/banner/banner_mobile.jpg);"></div>
+                    <div class="swiper-slide" style="background-image: url(./images/banner/banner_mobile.jpg);"></div>
+                    <div class="swiper-slide" style="background-image: url(./images/banner/banner_mobile.jpg);"></div>
+                    <div class="swiper-slide" style="background-image: url(./images/banner/banner_mobile.jpg);"></div>
+                    <div class="swiper-slide" style="background-image: url(./images/banner/banner_mobile.jpg);"></div>
+                    <div class="swiper-slide" style="background-image: url(./images/banner/banner_mobile.jpg);"></div>
+                </div>
+                <div class="swiper-bundle-container">
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+            <!-- 側邊欄 -->
+            ##include('./components/sidebar.html')
+            ##include('./components/sidebarModal.html')
+
+            <div class="home-wrapper">
+
+                <!-- section-ranking -->
+                <section class="section section-ranking">
+                    <div class="ranking-container">
+                        <div class="ranking-title">
+                            <i class="common-icon section-fund-ranking icon-lg mgr-1"></i>
+                            <h2><span>基金排名</span></h2>
+                        </div>
+                        <div class="ranking-content">
+                            <div id="ranking-tabs">
+                                <ul class="ranking-tabs-list">
+                                    <li class="ranking-tabs-item" data-tab="fund"><a data-label="優質特選基金" href="#ranking-tabs-fund"></a></li>
+                                    <li class="ranking-tabs-item" data-tab="config"><a data-label="核心配置首選" href="#ranking-tabs-config"></a></li>
+                                    <li class="ranking-tabs-item" data-tab="best"><a data-label="本行熱銷排行" href="#ranking-tabs-best"></a></li>
+                                </ul>
+                                <div class="ranking-tabs-content" id="ranking-tabs-fund">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">本行代碼</th>
+                                                <th scope="col">基金名稱</th>
+                                                <th scope="col">淨值日期</th>
+                                                <th scope="col">最新淨值</th>
+                                                <th scope="col">月跌漲幅</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="ranking-tabs-pc">
+                                            <tr>
+                                                <td>AC56</td>
+                                                <td><a class="ranking-tabs-link" href="javascript:;">聯博-全球高收益債券基金AT級別美元(本基金主要係投資於非投資等級之高風險債券且配息來源可能為本金)</a></td>
+                                                <td>4/18</td>
+                                                <td>34.77</td>
+                                                <td><div class="change red"><div class="count">+1.91%</div><i class="fas fa-triangle ml-1"></i></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td>AC57</td>
+                                                <td><a class="ranking-tabs-link" href="javascript:;">NB新興市場本地貨幣債券基金(本基金有相當比重投資於非投資等級之高風險債券且配息來源可能為本金)</a></td>
+                                                <td>12/30</td>
+                                                <td>54.12</td>
+                                                <td><div class="change red"><div class="count">+3.04%</div><i class="fas fa-triangle ml-1"></i></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td>AC58</td>
+                                                <td><a class="ranking-tabs-link" href="javascript:;">摩根投資基金－多重收益基金 - (美元對沖)-F股(累計) *該基金限合作通路銷售 (本基金有相當比重投資於非投資等級之高風險債券且配息來源可能為本金)</a></td>
+                                                <td>1/16</td>
+                                                <td>41.19</td>
+                                                <td><div class="change red"><div class="count">+4.85%</div><i class="fas fa-triangle ml-1"></i></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td>AC59</td>
+                                                <td><a class="ranking-tabs-link" href="javascript:;">安聯收益成長基金-AM穩定月收類股(南非幣避險) ( 本基金有相當比重投資於非投資等級之高風險債券且配息來源可能為本金 )</a></td>
+                                                <td>10/25</td>
+                                                <td>141.84</td>
+                                                <td><div class="change red"><div class="count">+10.86%</div><i class="fas fa-triangle ml-1"></i></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td>AC60</td>
+                                                <td><a class="ranking-tabs-link" href="javascript:;">施羅德(環)環球收息債券(基金有相當比重投資於非投資等級之高風險債券且基金之配息來源可能為本金)</a></td>
+                                                <td>8/3</td>
+                                                <td>10.24</td>
+                                                <td><div class="change green"><div class="count">-2.38%</div><i class="fas fa-triangle ml-1"></i></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td>AC61</td>
+                                                <td><a class="ranking-tabs-link" href="javascript:;">富蘭克林坦伯頓全球投資系列－新興國家固定收益基金美元A (Mdis)股 ( 本基金有相當比重投資於非投資等級之高風險債券且基金之配息來源可能為本金 )</a></td>
+                                                <td>2/7</td>
+                                                <td>74.18</td>
+                                                <td><div class="change green"><div class="count">-4.68%</div><i class="fas fa-triangle ml-1"></i></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td>AC62</td>
+                                                <td><a class="ranking-tabs-link" href="javascript:;">富蘭克林坦伯頓全球投資系列－新興國家固定收益基金美元A (Mdis)股 ( 本基金有相當比重投資於非投資等級之高風險債券且基金之配息來源可能為本金 )</a></td>
+                                                <td>4/8</td>
+                                                <td>64.17</td>
+                                                <td><div class="change red"><div class="count">+1.68%</div><i class="fas fa-triangle ml-1"></i></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td>AC63</td>
+                                                <td><a class="ranking-tabs-link" href="javascript:;">富蘭克林坦伯頓全球投資系列－新興國家固定收益基金美元A (Mdis)股 ( 本基金有相當比重投資於非投資等級之高風險債券且基金之配息來源可能為本金 )</a></td>
+                                                <td>12/7</td>
+                                                <td>64.17</td>
+                                                <td><div class="change red"><div class="count">+2.42%</div><i class="fas fa-triangle ml-1"></i></div></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody class="ranking-tabs-mobile">
+                                            <tr>
+                                                <td>AC56</td>
+                                                <td><a class="ranking-tabs-link" href="javascript:;">聯博-全球高收益債券基金AT級別美元(本基金主要係投資於非投資等級之高風險債券且配息來源可能為本金)</a></td>
+                                                <td>4/18</td>
+                                                <td>34.77</td>
+                                                <td><div class="change red"><div class="count">+1.91%</div><i class="fas fa-triangle ml-1"></i></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td>AC57</td>
+                                                <td><a class="ranking-tabs-link" href="javascript:;">NB新興市場本地貨幣債券基金(本基金有相當比重投資於非投資等級之高風險債券且配息來源可能為本金)</a></td>
+                                                <td>12/30</td>
+                                                <td>54.12</td>
+                                                <td><div class="change red"><div class="count">+3.04%</div><i class="fas fa-triangle ml-1"></i></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td>AC58</td>
+                                                <td><a class="ranking-tabs-link" href="javascript:;">摩根投資基金－多重收益基金 - (美元對沖)-F股(累計) *該基金限合作通路銷售 (本基金有相當比重投資於非投資等級之高風險債券且配息來源可能為本金)</a></td>
+                                                <td>1/16</td>
+                                                <td>41.19</td>
+                                                <td><div class="change red"><div class="count">+4.85%</div><i class="fas fa-triangle ml-1"></i></div></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="text-right pdb-2">
+                                        <a class="read-more" href="javascript:;"><i class="icon-readMore mgr-1"></i><span>查看更多</span></a>
+                                    </div>
+                                    <nav class="pagination-nav" aria-label="Page navigation example">
+                                        <a class="page-arrow" href="javascript:;" aria-label="Previous">
+                                            <i class="fal fa-angle-left"></i>
+                                        </a>
+                                        <ul class="pagination">
+                                            <li class="page-item active"><a class="page-link" href="javascript:;">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="javascript:;">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="javascript:;">3</a></li>
+                                            <li class="page-item"><a class="page-link" href="javascript:;">4</a></li>
+                                        </ul>
+                                        <a class="page-arrow" href="javascript:;" aria-label="Next">
+                                            <i class="fal fa-angle-right"></i>
+                                        </a>
+                                    </nav>
+                                </div>
+                                <div class="ranking-tabs-content" style="display: none;" id="ranking-tabs-config">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">本行代碼</th>
+                                                <th scope="col">基金名稱</th>
+                                                <th scope="col">淨值日期</th>
+                                                <th scope="col">最新淨值</th>
+                                                <th scope="col">月跌漲幅</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="ranking-tabs-pc">
+                                            <tr>
+                                                <td>AD56</td>
+                                                <td><a class="ranking-tabs-link" href="javascript:;">聯博-全球高收益債券基金AT級別美元(本基金主要係投資於非投資等級之高風險債券且配息來源可能為本金)</a></td>
+                                                <td>4/18</td>
+                                                <td>34.77</td>
+                                                <td><div class="change red"><div class="count">+1.91%</div><i class="fas fa-triangle ml-1"></i></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td>AD57</td>
+                                                <td><a class="ranking-tabs-link" href="javascript:;">NB新興市場本地貨幣債券基金(本基金有相當比重投資於非投資等級之高風險債券且配息來源可能為本金)</a></td>
+                                                <td>12/30</td>
+                                                <td>54.12</td>
+                                                <td><div class="change red"><div class="count">+3.04%</div><i class="fas fa-triangle ml-1"></i></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td>AD58</td>
+                                                <td><a class="ranking-tabs-link" href="javascript:;">摩根投資基金－多重收益基金 - (美元對沖)-F股(累計) *該基金限合作通路銷售 (本基金有相當比重投資於非投資等級之高風險債券且配息來源可能為本金)</a></td>
+                                                <td>1/16</td>
+                                                <td>41.19</td>
+                                                <td><div class="change red"><div class="count">+4.85%</div><i class="fas fa-triangle ml-1"></i></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td>AD59</td>
+                                                <td><a class="ranking-tabs-link" href="javascript:;">安聯收益成長基金-AM穩定月收類股(南非幣避險) ( 本基金有相當比重投資於非投資等級之高風險債券且配息來源可能為本金 )</a></td>
+                                                <td>10/25</td>
+                                                <td>141.84</td>
+                                                <td><div class="change red"><div class="count">+10.86%</div><i class="fas fa-triangle ml-1"></i></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td>AD60</td>
+                                                <td><a class="ranking-tabs-link" href="javascript:;">施羅德(環)環球收息債券(基金有相當比重投資於非投資等級之高風險債券且基金之配息來源可能為本金)</a></td>
+                                                <td>8/3</td>
+                                                <td>10.24</td>
+                                                <td><div class="change green"><div class="count">-2.38%</div><i class="fas fa-triangle ml-1"></i></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td>AD61</td>
+                                                <td><a class="ranking-tabs-link" href="javascript:;">富蘭克林坦伯頓全球投資系列－新興國家固定收益基金美元A (Mdis)股 ( 本基金有相當比重投資於非投資等級之高風險債券且基金之配息來源可能為本金 )</a></td>
+                                                <td>2/7</td>
+                                                <td>74.18</td>
+                                                <td><div class="change green"><div class="count">-4.68%</div><i class="fas fa-triangle ml-1"></i></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td>AD62</td>
+                                                <td><a class="ranking-tabs-link" href="javascript:;">富蘭克林坦伯頓全球投資系列－新興國家固定收益基金美元A (Mdis)股 ( 本基金有相當比重投資於非投資等級之高風險債券且基金之配息來源可能為本金 )</a></td>
+                                                <td>4/8</td>
+                                                <td>64.17</td>
+                                                <td><div class="change red"><div class="count">+1.68%</div><i class="fas fa-triangle ml-1"></i></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td>AD63</td>
+                                                <td><a class="ranking-tabs-link" href="javascript:;">富蘭克林坦伯頓全球投資系列－新興國家固定收益基金美元A (Mdis)股 ( 本基金有相當比重投資於非投資等級之高風險債券且基金之配息來源可能為本金 )</a></td>
+                                                <td>12/7</td>
+                                                <td>64.17</td>
+                                                <td><div class="change red"><div class="count">+2.42%</div><i class="fas fa-triangle ml-1"></i></div></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody class="ranking-tabs-mobile">
+                                            <tr>
+                                                <td>AD56</td>
+                                                <td><a class="ranking-tabs-link" href="javascript:;">聯博-全球高收益債券基金AT級別美元(本基金主要係投資於非投資等級之高風險債券且配息來源可能為本金)</a></td>
+                                                <td>4/18</td>
+                                                <td>34.77</td>
+                                                <td><div class="change red"><div class="count">+1.91%</div><i class="fas fa-triangle ml-1"></i></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td>AD57</td>
+                                                <td><a class="ranking-tabs-link" href="javascript:;">NB新興市場本地貨幣債券基金(本基金有相當比重投資於非投資等級之高風險債券且配息來源可能為本金)</a></td>
+                                                <td>12/30</td>
+                                                <td>54.12</td>
+                                                <td><div class="change red"><div class="count">+3.04%</div><i class="fas fa-triangle ml-1"></i></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td>AD58</td>
+                                                <td><a class="ranking-tabs-link" href="javascript:;">摩根投資基金－多重收益基金 - (美元對沖)-F股(累計) *該基金限合作通路銷售 (本基金有相當比重投資於非投資等級之高風險債券且配息來源可能為本金)</a></td>
+                                                <td>1/16</td>
+                                                <td>41.19</td>
+                                                <td><div class="change red"><div class="count">+4.85%</div><i class="fas fa-triangle ml-1"></i></div></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="text-right pdb-2">
+                                        <a class="read-more" href="javascript:;"><i class="icon-readMore mgr-1"></i><span>查看更多</span></a>
+                                    </div>
+                                    <nav class="pagination-nav" aria-label="Page navigation example">
+                                        <a class="page-arrow" href="javascript:;" aria-label="Previous">
+                                            <i class="fal fa-angle-left"></i>
+                                        </a>
+                                        <ul class="pagination">
+                                            <li class="page-item active"><a class="page-link" href="javascript:;">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="javascript:;">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="javascript:;">3</a></li>
+                                            <li class="page-item"><a class="page-link" href="javascript:;">4</a></li>
+                                        </ul>
+                                        <a class="page-arrow" href="javascript:;" aria-label="Next">
+                                            <i class="fal fa-angle-right"></i>
+                                        </a>
+                                    </nav>
+                                </div>
+                                <div class="ranking-tabs-content" style="display: none;" id="ranking-tabs-best">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">本行代碼</th>
+                                                <th scope="col">基金名稱</th>
+                                                <th scope="col">淨值日期</th>
+                                                <th scope="col">最新淨值</th>
+                                                <th scope="col">月跌漲幅</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="ranking-tabs-pc">
+                                            <tr>
+                                                <td>AE56</td>
+                                                <td><a class="ranking-tabs-link" href="javascript:;">聯博-全球高收益債券基金AT級別美元(本基金主要係投資於非投資等級之高風險債券且配息來源可能為本金)</a></td>
+                                                <td>4/18</td>
+                                                <td>34.77</td>
+                                                <td><div class="change red"><div class="count">+1.91%</div><i class="fas fa-triangle ml-1"></i></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td>AE57</td>
+                                                <td><a class="ranking-tabs-link" href="javascript:;">NB新興市場本地貨幣債券基金(本基金有相當比重投資於非投資等級之高風險債券且配息來源可能為本金)</a></td>
+                                                <td>12/30</td>
+                                                <td>54.12</td>
+                                                <td><div class="change red"><div class="count">+3.04%</div><i class="fas fa-triangle ml-1"></i></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td>AE58</td>
+                                                <td><a class="ranking-tabs-link" href="javascript:;">摩根投資基金－多重收益基金 - (美元對沖)-F股(累計) *該基金限合作通路銷售 (本基金有相當比重投資於非投資等級之高風險債券且配息來源可能為本金)</a></td>
+                                                <td>1/16</td>
+                                                <td>41.19</td>
+                                                <td><div class="change red"><div class="count">+4.85%</div><i class="fas fa-triangle ml-1"></i></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td>AE59</td>
+                                                <td><a class="ranking-tabs-link" href="javascript:;">安聯收益成長基金-AM穩定月收類股(南非幣避險) ( 本基金有相當比重投資於非投資等級之高風險債券且配息來源可能為本金 )</a></td>
+                                                <td>10/25</td>
+                                                <td>141.84</td>
+                                                <td><div class="change red"><div class="count">+10.86%</div><i class="fas fa-triangle ml-1"></i></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td>AE60</td>
+                                                <td><a class="ranking-tabs-link" href="javascript:;">施羅德(環)環球收息債券(基金有相當比重投資於非投資等級之高風險債券且基金之配息來源可能為本金)</a></td>
+                                                <td>8/3</td>
+                                                <td>10.24</td>
+                                                <td><div class="change green"><div class="count">-2.38%</div><i class="fas fa-triangle ml-1"></i></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td>AE61</td>
+                                                <td><a class="ranking-tabs-link" href="javascript:;">富蘭克林坦伯頓全球投資系列－新興國家固定收益基金美元A (Mdis)股 ( 本基金有相當比重投資於非投資等級之高風險債券且基金之配息來源可能為本金 )</a></td>
+                                                <td>2/7</td>
+                                                <td>74.18</td>
+                                                <td><div class="change green"><div class="count">-4.68%</div><i class="fas fa-triangle ml-1"></i></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td>AE62</td>
+                                                <td><a class="ranking-tabs-link" href="javascript:;">富蘭克林坦伯頓全球投資系列－新興國家固定收益基金美元A (Mdis)股 ( 本基金有相當比重投資於非投資等級之高風險債券且基金之配息來源可能為本金 )</a></td>
+                                                <td>4/8</td>
+                                                <td>64.17</td>
+                                                <td><div class="change red"><div class="count">+1.68%</div><i class="fas fa-triangle ml-1"></i></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td>AE63</td>
+                                                <td><a class="ranking-tabs-link" href="javascript:;">富蘭克林坦伯頓全球投資系列－新興國家固定收益基金美元A (Mdis)股 ( 本基金有相當比重投資於非投資等級之高風險債券且基金之配息來源可能為本金 )</a></td>
+                                                <td>12/7</td>
+                                                <td>64.17</td>
+                                                <td><div class="change red"><div class="count">+2.42%</div><i class="fas fa-triangle ml-1"></i></div></td>
+                                            </tr>
+                                        </tbody>
+                                        <tbody class="ranking-tabs-mobile">
+                                            <tr>
+                                                <td>AE56</td>
+                                                <td><a class="ranking-tabs-link" href="javascript:;">聯博-全球高收益債券基金AT級別美元(本基金主要係投資於非投資等級之高風險債券且配息來源可能為本金)</a></td>
+                                                <td>4/18</td>
+                                                <td>34.77</td>
+                                                <td><div class="change red"><div class="count">+1.91%</div><i class="fas fa-triangle ml-1"></i></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td>AE57</td>
+                                                <td><a class="ranking-tabs-link" href="javascript:;">NB新興市場本地貨幣債券基金(本基金有相當比重投資於非投資等級之高風險債券且配息來源可能為本金)</a></td>
+                                                <td>12/30</td>
+                                                <td>54.12</td>
+                                                <td><div class="change red"><div class="count">+3.04%</div><i class="fas fa-triangle ml-1"></i></div></td>
+                                            </tr>
+                                            <tr>
+                                                <td>AE58</td>
+                                                <td><a class="ranking-tabs-link" href="javascript:;">摩根投資基金－多重收益基金 - (美元對沖)-F股(累計) *該基金限合作通路銷售 (本基金有相當比重投資於非投資等級之高風險債券且配息來源可能為本金)</a></td>
+                                                <td>1/16</td>
+                                                <td>41.19</td>
+                                                <td><div class="change red"><div class="count">+4.85%</div><i class="fas fa-triangle ml-1"></i></div></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <div class="text-right pdb-2">
+                                        <a class="read-more" href="javascript:;"><i class="icon-readMore mgr-1"></i><span>查看更多</span></a>
+                                    </div>
+                                    <nav class="pagination-nav" aria-label="Page navigation example">
+                                        <a class="page-arrow" href="javascript:;" aria-label="Previous">
+                                            <i class="fal fa-angle-left"></i>
+                                        </a>
+                                        <ul class="pagination">
+                                            <li class="page-item active"><a class="page-link" href="javascript:;">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="javascript:;">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="javascript:;">3</a></li>
+                                            <li class="page-item"><a class="page-link" href="javascript:;">4</a></li>
+                                        </ul>
+                                        <a class="page-arrow" href="javascript:;" aria-label="Next">
+                                            <i class="fal fa-angle-right"></i>
+                                        </a>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- section-computer -->
+                <section class="section section-computer">
+                    <div class="computer-container">
+                        <div class="calculator">
+                            <div class="calculator-title">
+                                <i class="common-icon calculator-icon icon-lg mgr-1"></i>
+                                <h2><span>理財計算機</span></h2>
+                            </div>
+                            <div class="calculator-content">
+                                <div id="calculator-tabs">
+                                    <ul class="calculator-tabs-list">
+                                        <li class="calculator-tabs-item"><a href="#calculator-tabs-singleInvestment"><i class="icon-singleInvestment mgr-2"></i>單筆投資</a></li>
+                                        <li class="calculator-tabs-item"><a href="#calculator-tabs-dollarCostAveraging"><i class="icon-dollarCostAveraging mgr-2"></i>定期定額</a></li>
+                                        <div class="calculator-tabs-active-line"></div>
+                                    </ul>
+                                    <div class="calculator-tabs-content" id="calculator-tabs-singleInvestment">
+                                        <div id="singleInvestment-tabs">
+                                            <ul class="calculator-common-tabs-list">
+                                                <li class="calculator-common-tabs-item"><a href="#singleInvestment-tabs-amount"><i class="fas fa-check"></i>計算投資金額</a></li>
+                                                <li class="calculator-common-tabs-item"><a href="#singleInvestment-tabs-period"><i class="fas fa-check"></i>試算投資期間</a></li>
+                                                <li class="calculator-common-tabs-item"><a href="#singleInvestment-tabs-roi"><i class="fas fa-check"></i>試算投資年報酬率</a></li>
+                                                <li class="calculator-common-tabs-item"><a href="#singleInvestment-tabs-expiredIncome"><i class="fas fa-check"></i>試算到期收益</a></li>
+                                            </ul>
+                                            <div class="calculator-common-tabs-content" id="singleInvestment-tabs-amount">
+                                                <div class="calculator-common-tabs-label">我一開始要扣/存多少可以達到我的目標金額？</div>
+                                                <div class="calculator-common-tabs-box">
+                                                    <ul class="calculator-list">
+                                                        <li class="calculator-item">
+                                                            <label>目標金額</label>
+                                                            <div class="input-text-group">
+                                                                <input
+                                                                    class="calculator-input"
+                                                                    type="text"
+                                                                    value="1,000,000"
+                                                                    pattern="[0-9]*"
+                                                                    inputMode="numeric"
+                                                                    step="1"
+                                                                    data-min="100000"
+                                                                    data-max="50000000"
+                                                                />
+                                                                <div class="input-desc">元</div>
+                                                            </div>
+                                                            <div class="input-range-group">
+                                                                <input
+                                                                    class="range-control"
+                                                                    type="range"
+                                                                    min="100000"
+                                                                    max="50000000"
+                                                                    value="1000000"
+                                                                >
+                                                                <div class="d-flex justify-content-between">
+                                                                    <span>10萬</span>
+                                                                    <span>5,000萬</span>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="calculator-item">
+                                                            <label>我預期扣款</label>
+                                                            <div class="input-text-group">
+                                                                <input
+                                                                    class="calculator-input"
+                                                                    type="text"
+                                                                    value="10"
+                                                                    pattern="[0-9]*"
+                                                                    inputMode="numeric"
+                                                                    step="1"
+                                                                    data-min="1"
+                                                                    data-max="50"
+                                                                />
+                                                                <div class="input-desc">年後</div>
+                                                            </div>
+                                                            <div class="input-range-group">
+                                                                <input
+                                                                    class="range-control"
+                                                                    type="range"
+                                                                    min="1"
+                                                                    max="50"
+                                                                    step="1"
+                                                                    value="10"
+                                                                >
+                                                                <div class="d-flex justify-content-between">
+                                                                    <span>1年</span>
+                                                                    <span>50年</span>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="calculator-item">
+                                                            <label>我預期報酬率</label>
+                                                            <div class="input-text-group">
+                                                                <input
+                                                                    class="calculator-input"
+                                                                    type="text"
+                                                                    value="5"
+                                                                    pattern="[0-9]*"
+                                                                    inputMode="numeric"
+                                                                    step="1"
+                                                                    data-min="1"
+                                                                    data-max="100"
+                                                                />
+                                                                <div class="input-desc">%</div>
+                                                            </div>
+                                                            <div class="input-range-group">
+                                                                <input
+                                                                    class="range-control"
+                                                                    type="range"
+                                                                    min="1"
+                                                                    max="100"
+                                                                    step="1"
+                                                                    value="5"
+                                                                >
+                                                                <div class="d-flex justify-content-between">
+                                                                    <span>1%</span>
+                                                                    <span>100%</span>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="calculator-result">
+                                                        <label>單筆投資金額</label>
+                                                        <span class="result">607,161元</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="calculator-common-tabs-content" style="display: none;" id="singleInvestment-tabs-period">
+                                                <div class="calculator-common-tabs-label">我現在有一筆錢，需要投資多久可以達到我的目標金額？</div>
+                                                <div class="calculator-common-tabs-box">
+                                                    <ul class="calculator-list">
+                                                        <li class="calculator-item">
+                                                            <label>我現在投資金額有</label>
+                                                            <div class="input-text-group">
+                                                                <input
+                                                                    class="calculator-input"
+                                                                    type="text"
+                                                                    value="500,000"
+                                                                    pattern="[0-9]*"
+                                                                    inputMode="numeric"
+                                                                    step="1"
+                                                                    data-min="3000"
+                                                                    data-max="500000"
+                                                                />
+                                                                <div class="input-desc">元</div>
+                                                            </div>
+                                                            <div class="input-range-group">
+                                                                <input
+                                                                    class="range-control"
+                                                                    type="range"
+                                                                    min="3000"
+                                                                    max="500000"
+                                                                    step="1"
+                                                                    value="500000"
+                                                                >
+                                                                <div class="d-flex justify-content-between">
+                                                                    <span>3000元</span>
+                                                                    <span>50萬</span>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="calculator-item">
+                                                            <label>我預期報酬率</label>
+                                                            <div class="input-text-group">
+                                                                <input
+                                                                    class="calculator-input"
+                                                                    type="text"
+                                                                    value="5"
+                                                                    pattern="[0-9]*"
+                                                                    inputMode="numeric"
+                                                                    step="1"
+                                                                    data-min="1"
+                                                                    data-max="100"
+                                                                />
+                                                                <div class="input-desc">%</div>
+                                                            </div>
+                                                            <div class="input-range-group">
+                                                                <input
+                                                                    class="range-control"
+                                                                    type="range"
+                                                                    min="1"
+                                                                    max="100"
+                                                                    step="1"
+                                                                    value="5"
+                                                                >
+                                                                <div class="d-flex justify-content-between">
+                                                                    <span>1%</span>
+                                                                    <span>100%</span>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="calculator-item">
+                                                            <label>目標金額</label>
+                                                            <div class="input-text-group">
+                                                                <input
+                                                                    class="calculator-input"
+                                                                    type="text"
+                                                                    value="1,000,000"
+                                                                    pattern="[0-9]*"
+                                                                    inputMode="numeric"
+                                                                    step="1"
+                                                                    data-min="100000"
+                                                                    data-max="50000000"
+                                                                />
+                                                                <div class="input-desc">元</div>
+                                                            </div>
+                                                            <div class="input-range-group">
+                                                                <input
+                                                                    class="range-control"
+                                                                    type="range"
+                                                                    min="100000"
+                                                                    max="50000000"
+                                                                    step="1"
+                                                                    value="1000000"
+                                                                >
+                                                                <div class="d-flex justify-content-between">
+                                                                    <span>10萬</span>
+                                                                    <span>5000萬</span>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="calculator-result">
+                                                        <label>我需要投資</label>
+                                                        <span class="result">13年+11月</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="calculator-common-tabs-content" style="display: none;" id="singleInvestment-tabs-roi">
+                                                <div class="calculator-common-tabs-label">我現在有一筆錢，我要尋找年報酬率多少的商品可達到我的目標金額？</div>
+                                                <div class="calculator-common-tabs-box">
+                                                    <ul class="calculator-list">
+                                                        <li class="calculator-item">
+                                                            <label>我現在投資金額有</label>
+                                                            <div class="input-text-group">
+                                                                <input
+                                                                    class="calculator-input"
+                                                                    type="text"
+                                                                    value="200,000"
+                                                                    pattern="[0-9]*"
+                                                                    inputMode="numeric"
+                                                                    step="1"
+                                                                    data-min="3000"
+                                                                    data-max="500000"
+                                                                />
+                                                                <div class="input-desc">元</div>
+                                                            </div>
+                                                            <div class="input-range-group">
+                                                                <input
+                                                                    class="range-control"
+                                                                    type="range"
+                                                                    min="3000"
+                                                                    max="500000"
+                                                                    step="1"
+                                                                    value="200000"
+                                                                >
+                                                                <div class="d-flex justify-content-between">
+                                                                    <span>3000元</span>
+                                                                    <span>50萬</span>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="calculator-item">
+                                                            <label>我預期</label>
+                                                            <div class="input-text-group">
+                                                                <input
+                                                                    class="calculator-input"
+                                                                    type="text"
+                                                                    value="10"
+                                                                    pattern="[0-9]*"
+                                                                    inputMode="numeric"
+                                                                    step="1"
+                                                                    data-min="1"
+                                                                    data-max="50"
+                                                                />
+                                                                <div class="input-desc">年後</div>
+                                                            </div>
+                                                            <div class="input-range-group">
+                                                                <input
+                                                                    class="range-control"
+                                                                    type="range"
+                                                                    min="1"
+                                                                    max="50"
+                                                                    step="1"
+                                                                    value="10"
+                                                                >
+                                                                <div class="d-flex justify-content-between">
+                                                                    <span>1年</span>
+                                                                    <span>50年</span>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="calculator-item">
+                                                            <label>目標金額</label>
+                                                            <div class="input-text-group">
+                                                                <input
+                                                                    class="calculator-input"
+                                                                    type="text"
+                                                                    value="300,000"
+                                                                    pattern="[0-9]*"
+                                                                    inputMode="numeric"
+                                                                    step="1"
+                                                                    data-min="100000"
+                                                                    data-max="50000000"
+                                                                />
+                                                                <div class="input-desc">元</div>
+                                                            </div>
+                                                            <div class="input-range-group">
+                                                                <input
+                                                                    class="range-control"
+                                                                    type="range"
+                                                                    min="100000"
+                                                                    max="50000000"
+                                                                    step="1"
+                                                                    value="300000"
+                                                                >
+                                                                <div class="d-flex justify-content-between">
+                                                                    <span>10萬</span>
+                                                                    <span>5000萬</span>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="calculator-result">
+                                                        <label>我的投資年報酬率</label>
+                                                        <span class="result">4%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="calculator-common-tabs-content" style="display: none;" id="singleInvestment-tabs-expiredIncome">
+                                                <div class="calculator-common-tabs-label">我有規劃每月扣款金額及扣款多久，到時候的目標金額有多少？ </div>
+                                                <div class="calculator-common-tabs-box">
+                                                    <ul class="calculator-list">
+                                                        <li class="calculator-item">
+                                                            <label>我現在投資金額有</label>
+                                                            <div class="input-text-group">
+                                                                <input
+                                                                    class="calculator-input"
+                                                                    type="text"
+                                                                    value="330,000"
+                                                                    pattern="[0-9]*"
+                                                                    inputMode="numeric"
+                                                                    step="1"
+                                                                    data-min="3000"
+                                                                    data-max="500000"
+                                                                />
+                                                                <div class="input-desc">元</div>
+                                                            </div>
+                                                            <div class="input-range-group">
+                                                                <input
+                                                                    class="range-control"
+                                                                    type="range"
+                                                                    min="3000"
+                                                                    max="500000"
+                                                                    step="1"
+                                                                    value="330000"
+                                                                >
+                                                                <div class="d-flex justify-content-between">
+                                                                    <span>3000元</span>
+                                                                    <span>50萬</span>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="calculator-item">
+                                                            <label>我預期扣款</label>
+                                                            <div class="input-text-group">
+                                                                <input
+                                                                    class="calculator-input"
+                                                                    type="text"
+                                                                    value="10"
+                                                                    pattern="[0-9]*"
+                                                                    inputMode="numeric"
+                                                                    step="1"
+                                                                    data-min="1"
+                                                                    data-max="50"
+                                                                />
+                                                                <div class="input-desc">年後</div>
+                                                            </div>
+                                                            <div class="input-range-group">
+                                                                <input
+                                                                    class="range-control"
+                                                                    type="range"
+                                                                    min="1"
+                                                                    max="50"
+                                                                    step="1"
+                                                                    value="10"
+                                                                >
+                                                                <div class="d-flex justify-content-between">
+                                                                    <span>1年</span>
+                                                                    <span>50年</span>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="calculator-item">
+                                                            <label>我預期報酬率</label>
+                                                            <div class="input-text-group">
+                                                                <input
+                                                                    class="calculator-input"
+                                                                    type="text"
+                                                                    value="6"
+                                                                    pattern="[0-9]*"
+                                                                    inputMode="numeric"
+                                                                    step="1"
+                                                                    data-min="1"
+                                                                    data-max="100"
+                                                                />
+                                                                <div class="input-desc">%</div>
+                                                            </div>
+                                                            <div class="input-range-group">
+                                                                <input
+                                                                    class="range-control"
+                                                                    type="range"
+                                                                    min="1"
+                                                                    max="100"
+                                                                    step="1"
+                                                                    value="6"
+                                                                >
+                                                                <div class="d-flex justify-content-between">
+                                                                    <span>1%</span>
+                                                                    <span>100%</span>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="calculator-result">
+                                                        <label>我需要投資</label>
+                                                        <span class="result">600,000元</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="warning-label-pc"><span class="font-weight-bold">警語：</span>*以上僅為概算數字，假設金額皆為月初投入，每月複利計算，浮動利率及通貨膨脹率不納入考量。*本功能僅供試算功能，試算結果僅供參考使用。*含(內扣)1%手續費。</div>
+                                        </div>
+                                    </div>
+                                    <div class="calculator-tabs-content" style="display: none;" id="calculator-tabs-dollarCostAveraging">
+                                        <div id="dollarCostAveraging-tabs">
+                                            <ul class="calculator-common-tabs-list">
+                                                <li class="calculator-common-tabs-item"><a href="#dollarCostAveraging-tabs-amount"><i class="fas fa-check"></i>計算投資金額</a></li>
+                                                <li class="calculator-common-tabs-item"><a href="#dollarCostAveraging-tabs-period"><i class="fas fa-check"></i>試算投資期間</a></li>
+                                                <li class="calculator-common-tabs-item"><a href="#dollarCostAveraging-tabs-roi"><i class="fas fa-check"></i>試算投資年報酬率</a></li>
+                                                <li class="calculator-common-tabs-item"><a href="#dollarCostAveraging-tabs-expiredIncome"><i class="fas fa-check"></i>試算到期收益</a></li>
+                                            </ul>
+                                            <div class="calculator-common-tabs-content" id="dollarCostAveraging-tabs-amount">
+                                                <div class="calculator-common-tabs-label">我每個月要扣/存多少可以達到我的目標金額？</div>
+                                                <div class="calculator-common-tabs-box">
+                                                    <ul class="calculator-list">
+                                                        <li class="calculator-item">
+                                                            <label>目標金額</label>
+                                                            <div class="input-text-group">
+                                                                <input
+                                                                    class="calculator-input"
+                                                                    type="text"
+                                                                    value="1,000,000"
+                                                                    pattern="[0-9]*"
+                                                                    inputMode="numeric"
+                                                                    step="1"
+                                                                    data-min="100000"
+                                                                    data-max="50000000"
+                                                                />
+                                                                <div class="input-desc">元</div>
+                                                            </div>
+                                                            <div class="input-range-group">
+                                                                <input
+                                                                    class="range-control"
+                                                                    type="range"
+                                                                    min="100000"
+                                                                    max="50000000"
+                                                                    value="1000000"
+                                                                >
+                                                                <div class="d-flex justify-content-between">
+                                                                    <span>10萬</span>
+                                                                    <span>5,000萬</span>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="calculator-item">
+                                                            <label>我預期扣款</label>
+                                                            <div class="input-text-group">
+                                                                <input
+                                                                    class="calculator-input"
+                                                                    type="text"
+                                                                    value="10"
+                                                                    pattern="[0-9]*"
+                                                                    inputMode="numeric"
+                                                                    step="1"
+                                                                    data-min="1"
+                                                                    data-max="50"
+                                                                />
+                                                                <div class="input-desc">年後</div>
+                                                            </div>
+                                                            <div class="input-range-group">
+                                                                <input
+                                                                    class="range-control"
+                                                                    type="range"
+                                                                    min="1"
+                                                                    max="50"
+                                                                    step="1"
+                                                                    value="10"
+                                                                >
+                                                                <div class="d-flex justify-content-between">
+                                                                    <span>1年</span>
+                                                                    <span>50年</span>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="calculator-item">
+                                                            <label>我預期報酬率</label>
+                                                            <div class="input-text-group">
+                                                                <input
+                                                                    class="calculator-input"
+                                                                    type="text"
+                                                                    value="5"
+                                                                    pattern="[0-9]*"
+                                                                    inputMode="numeric"
+                                                                    step="1"
+                                                                    data-min="1"
+                                                                    data-max="100"
+                                                                />
+                                                                <div class="input-desc">%</div>
+                                                            </div>
+                                                            <div class="input-range-group">
+                                                                <input
+                                                                    class="range-control"
+                                                                    type="range"
+                                                                    min="1"
+                                                                    max="100"
+                                                                    step="1"
+                                                                    value="5"
+                                                                >
+                                                                <div class="d-flex justify-content-between">
+                                                                    <span>1%</span>
+                                                                    <span>100%</span>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="calculator-result">
+                                                        <label>每月投資金額</label>
+                                                        <span class="result">6,413元</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="calculator-common-tabs-content" id="dollarCostAveraging-tabs-period">
+                                                <div class="calculator-common-tabs-label">我需要投資多久可以達到我的目標金額？</div>
+                                                <div class="calculator-common-tabs-box">
+                                                    <ul class="calculator-list">
+                                                        <li class="calculator-item">
+                                                            <label>我每個月扣款</label>
+                                                            <div class="input-text-group">
+                                                                <input
+                                                                    class="calculator-input"
+                                                                    type="text"
+                                                                    value="5,000"
+                                                                    pattern="[0-9]*"
+                                                                    inputMode="numeric"
+                                                                    step="1"
+                                                                    data-min="3000"
+                                                                    data-max="500000"
+                                                                />
+                                                                <div class="input-desc">元</div>
+                                                            </div>
+                                                            <div class="input-range-group">
+                                                                <input
+                                                                    class="range-control"
+                                                                    type="range"
+                                                                    min="3000"
+                                                                    max="500000"
+                                                                    step="1"
+                                                                    value="5000"
+                                                                >
+                                                                <div class="d-flex justify-content-between">
+                                                                    <span>3000元</span>
+                                                                    <span>50萬</span>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="calculator-item">
+                                                            <label>我預期報酬率</label>
+                                                            <div class="input-text-group">
+                                                                <input
+                                                                    class="calculator-input"
+                                                                    type="text"
+                                                                    value="5"
+                                                                    pattern="[0-9]*"
+                                                                    inputMode="numeric"
+                                                                    step="1"
+                                                                    data-min="1"
+                                                                    data-max="100"
+                                                                />
+                                                                <div class="input-desc">%</div>
+                                                            </div>
+                                                            <div class="input-range-group">
+                                                                <input
+                                                                    class="range-control"
+                                                                    type="range"
+                                                                    min="1"
+                                                                    max="100"
+                                                                    step="1"
+                                                                    value="5"
+                                                                >
+                                                                <div class="d-flex justify-content-between">
+                                                                    <span>1%</span>
+                                                                    <span>100%</span>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="calculator-item">
+                                                            <label>目標金額</label>
+                                                            <div class="input-text-group">
+                                                                <input
+                                                                    class="calculator-input"
+                                                                    type="text"
+                                                                    value="100,000"
+                                                                    pattern="[0-9]*"
+                                                                    inputMode="numeric"
+                                                                    step="1"
+                                                                    data-min="100000"
+                                                                    data-max="50000000"
+                                                                />
+                                                                <div class="input-desc">元</div>
+                                                            </div>
+                                                            <div class="input-range-group">
+                                                                <input
+                                                                    class="range-control"
+                                                                    type="range"
+                                                                    min="100000"
+                                                                    max="50000000"
+                                                                    step="1"
+                                                                    value="100000"
+                                                                >
+                                                                <div class="d-flex justify-content-between">
+                                                                    <span>10萬</span>
+                                                                    <span>5000萬</span>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="calculator-result">
+                                                        <label>我需要投資</label>
+                                                        <span class="result">20月</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="calculator-common-tabs-content" id="dollarCostAveraging-tabs-roi">
+                                                <div class="calculator-common-tabs-label">我需要尋找大約多少報酬率的標的，可以達到我的目標金額？</div>
+                                                <div class="calculator-common-tabs-box">
+                                                    <ul class="calculator-list">
+                                                        <li class="calculator-item">
+                                                            <label>我每個月扣款</label>
+                                                            <div class="input-text-group">
+                                                                <input
+                                                                    class="calculator-input"
+                                                                    type="text"
+                                                                    value="3,000"
+                                                                    pattern="[0-9]*"
+                                                                    inputMode="numeric"
+                                                                    step="1"
+                                                                    data-min="3000"
+                                                                    data-max="500000"
+                                                                />
+                                                                <div class="input-desc">元</div>
+                                                            </div>
+                                                            <div class="input-range-group">
+                                                                <input
+                                                                    class="range-control"
+                                                                    type="range"
+                                                                    min="3000"
+                                                                    max="500000"
+                                                                    step="1"
+                                                                    value="3000"
+                                                                >
+                                                                <div class="d-flex justify-content-between">
+                                                                    <span>3000元</span>
+                                                                    <span>50萬</span>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="calculator-item">
+                                                            <label>我預期扣款</label>
+                                                            <div class="input-text-group">
+                                                                <input
+                                                                    class="calculator-input"
+                                                                    type="text"
+                                                                    value="10"
+                                                                    pattern="[0-9]*"
+                                                                    inputMode="numeric"
+                                                                    step="1"
+                                                                    data-min="1"
+                                                                    data-max="50"
+                                                                />
+                                                                <div class="input-desc">年後</div>
+                                                            </div>
+                                                            <div class="input-range-group">
+                                                                <input
+                                                                    class="range-control"
+                                                                    type="range"
+                                                                    min="1"
+                                                                    max="50"
+                                                                    step="1"
+                                                                    value="10"
+                                                                >
+                                                                <div class="d-flex justify-content-between">
+                                                                    <span>1年</span>
+                                                                    <span>50年</span>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="calculator-item">
+                                                            <label>目標金額</label>
+                                                            <div class="input-text-group">
+                                                                <input
+                                                                    class="calculator-input"
+                                                                    type="text"
+                                                                    value="300,000"
+                                                                    pattern="[0-9]*"
+                                                                    inputMode="numeric"
+                                                                    step="1"
+                                                                    data-min="100000"
+                                                                    data-max="50000000"
+                                                                />
+                                                                <div class="input-desc">元</div>
+                                                            </div>
+                                                            <div class="input-range-group">
+                                                                <input
+                                                                    class="range-control"
+                                                                    type="range"
+                                                                    min="100000"
+                                                                    max="50000000"
+                                                                    step="1"
+                                                                    value="300000"
+                                                                >
+                                                                <div class="d-flex justify-content-between">
+                                                                    <span>10萬</span>
+                                                                    <span>5000萬</span>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="calculator-result">
+                                                        <label>我的投資年報酬率</label>
+                                                        <span class="result">4%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="calculator-common-tabs-content" id="dollarCostAveraging-tabs-expiredIncome">
+                                                <div class="calculator-common-tabs-label">我有規劃每月扣款金額及扣款多久，到時候的目標金額有多少？</div>
+                                                <div class="calculator-common-tabs-box">
+                                                    <ul class="calculator-list">
+                                                        <li class="calculator-item">
+                                                            <label>我每個月扣款</label>
+                                                            <div class="input-text-group">
+                                                                <input
+                                                                    class="calculator-input"
+                                                                    type="text"
+                                                                    value="3,000"
+                                                                    pattern="[0-9]*"
+                                                                    inputMode="numeric"
+                                                                    step="1"
+                                                                    data-min="3000"
+                                                                    data-max="500000"
+                                                                />
+                                                                <div class="input-desc">元</div>
+                                                            </div>
+                                                            <div class="input-range-group">
+                                                                <input
+                                                                    class="range-control"
+                                                                    type="range"
+                                                                    min="3000"
+                                                                    max="500000"
+                                                                    step="1"
+                                                                    value="3000"
+                                                                >
+                                                                <div class="d-flex justify-content-between">
+                                                                    <span>3000元</span>
+                                                                    <span>50萬</span>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="calculator-item">
+                                                            <label>我預期扣款</label>
+                                                            <div class="input-text-group">
+                                                                <input
+                                                                    class="calculator-input"
+                                                                    type="text"
+                                                                    value="10"
+                                                                    pattern="[0-9]*"
+                                                                    inputMode="numeric"
+                                                                    step="1"
+                                                                    data-min="1"
+                                                                    data-max="50"
+                                                                />
+                                                                <div class="input-desc">年後</div>
+                                                            </div>
+                                                            <div class="input-range-group">
+                                                                <input
+                                                                    class="range-control"
+                                                                    type="range"
+                                                                    min="1"
+                                                                    max="50"
+                                                                    step="1"
+                                                                    value="10"
+                                                                >
+                                                                <div class="d-flex justify-content-between">
+                                                                    <span>1年</span>
+                                                                    <span>50年</span>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="calculator-item">
+                                                            <label>我預期報酬率</label>
+                                                            <div class="input-text-group">
+                                                                <input
+                                                                    class="calculator-input"
+                                                                    type="text"
+                                                                    value="6"
+                                                                    pattern="[0-9]*"
+                                                                    inputMode="numeric"
+                                                                    step="1"
+                                                                    data-min="1"
+                                                                    data-max="100"
+                                                                />
+                                                                <div class="input-desc">%</div>
+                                                            </div>
+                                                            <div class="input-range-group">
+                                                                <input
+                                                                    class="range-control"
+                                                                    type="range"
+                                                                    min="1"
+                                                                    max="100"
+                                                                    step="1"
+                                                                    value="6"
+                                                                >
+                                                                <div class="d-flex justify-content-between">
+                                                                    <span>1%</span>
+                                                                    <span>100%</span>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="calculator-result">
+                                                        <label>我需要投資</label>
+                                                        <span class="result">5,000元</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="warning-label-pc"><span class="font-weight-bold">警語：</span>*以上僅為概算數字，假設金額皆為月初投入，每月複利計算，浮動利率及通貨膨脹率不納入考量。*本功能僅供試算功能，試算結果僅供參考使用。*含(內扣)1%手續費。</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="warning-label-mobile"><span class="font-weight-bold">警語：</span>*以上僅為概算數字，假設金額皆為月初投入，每月複利計算，浮動利率及通貨膨脹率不納入考量。*本功能僅供試算功能，試算結果僅供參考使用。*含(內扣)1%手續費。</div>
+                        </div>
+                        <div class="filter">
+                            <div class="filter-title">
+                                <i class="common-icon filter-icon icon-sm mgr-1"></i>
+                                <h2><span>基金快篩</span></h2>
+                            </div>
+                            <div class="filter-content">
+                                <form class="filter-form">
+                                    <div class="form-container">
+                                        <div class="select-box company-box">
+                                            <div class="select-pc">
+                                                <button
+                                                    name="company"
+                                                    type="button"
+                                                    class="btn btn-secondary dropdown-toggle"
+                                                    id="selectCompany"
+                                                    data-toggle="dropdown"
+                                                    aria-haspopup="true"
+                                                    aria-expanded="false"
+                                                >
+                                                基金公司
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="selectCompany">
+                                                    <div class="dropdown-container">
+                                                        <a class="dropdown-item dropdown-company" href="javascript:;">公司A</a>
+                                                        <a class="dropdown-item dropdown-company" href="javascript:;">公司B</a>
+                                                        <a class="dropdown-item dropdown-company" href="javascript:;">公司C</a>
+                                                        <a class="dropdown-item dropdown-company" href="javascript:;">公司D</a>
+                                                        <a class="dropdown-item dropdown-company" href="javascript:;">公司E</a>
+                                                        <a class="dropdown-item dropdown-company" href="javascript:;">公司F</a>
+                                                        <a class="dropdown-item dropdown-company" href="javascript:;">公司G</a>
+                                                        <a class="dropdown-item dropdown-company" href="javascript:;">公司H</a>
+                                                        <a class="dropdown-item dropdown-company" href="javascript:;">公司I</a>
+                                                        <a class="dropdown-item dropdown-company" href="javascript:;">公司J</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="select-mobile">
+                                                <select class="filter-select">
+                                                    <option value="" selected="selected" disabled>基金公司</option>
+                                                    <option value="公司A">公司A</option>
+                                                    <option value="公司B">公司B</option>
+                                                    <option value="公司C">公司C</option>
+                                                    <option value="公司D">公司D</option>
+                                                    <option value="公司E">公司E</option>
+                                                    <option value="公司F">公司F</option>
+                                                    <option value="公司G">公司G</option>
+                                                    <option value="公司H">公司H</option>
+                                                    <option value="公司I">公司I</option>
+                                                    <option value="公司J">公司J</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex align-items-center w-100" style="flex: 2; margin-left: -1px;">
+                                            <div class="select-box area-box">
+                                                <div class="select-pc">
+                                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="selectArea" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        投資地區
+                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="selectArea">
+                                                        <div class="dropdown-container">
+                                                            <a class="dropdown-item" href="javascript:;">台灣</a>
+                                                            <a class="dropdown-item" href="javascript:;">日本</a>
+                                                            <a class="dropdown-item" href="javascript:;">南韓</a>
+                                                            <a class="dropdown-item" href="javascript:;">美國</a>
+                                                            <a class="dropdown-item" href="javascript:;">中國</a>
+                                                            <a class="dropdown-item" href="javascript:;">加拿大</a>
+                                                            <a class="dropdown-item" href="javascript:;">香港</a>
+                                                            <a class="dropdown-item" href="javascript:;">德國</a>
+                                                            <a class="dropdown-item" href="javascript:;">法國</a>
+                                                            <a class="dropdown-item" href="javascript:;">英國</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="select-mobile">
+                                                    <select class="filter-select area-select">
+                                                        <option value="" selected="selected" disabled>投資地區</option>
+                                                        <option value="台灣">台灣</option>
+                                                        <option value="日本">日本</option>
+                                                        <option value="南韓">南韓</option>
+                                                        <option value="美國">美國</option>
+                                                        <option value="中國">中國</option>
+                                                        <option value="加拿大">加拿大</option>
+                                                        <option value="香港">香港</option>
+                                                        <option value="德國">德國</option>
+                                                        <option value="法國">法國</option>
+                                                        <option value="英國">英國</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="select-box exchange-box">
+                                                <div class="select-pc">
+                                                    <button class="btn btn-secondary dropdown-toggle" type="button" id="selectExchange" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        計價類別
+                                                    </button>
+                                                    <div class="dropdown-menu" aria-labelledby="selectExchange">
+                                                        <div class="dropdown-container">
+                                                            <a class="dropdown-item" href="javascript:;">歐元</a>
+                                                            <a class="dropdown-item" href="javascript:;">美元</a>
+                                                            <a class="dropdown-item" href="javascript:;">紐幣</a>
+                                                            <a class="dropdown-item" href="javascript:;">台幣</a>
+                                                            <a class="dropdown-item" href="javascript:;">澳幣</a>
+                                                            <a class="dropdown-item" href="javascript:;">人民幣</a>
+                                                            <a class="dropdown-item" href="javascript:;">日幣</a>
+                                                            <a class="dropdown-item" href="javascript:;">韓元</a>
+                                                            <a class="dropdown-item" href="javascript:;">英鎊</a>
+                                                            <a class="dropdown-item" href="javascript:;">港幣</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="select-mobile">
+                                                    <select class="filter-select exchange-select">
+                                                        <option value="" selected="selected" disabled>計價類別</option>
+                                                        <option value="歐元">歐元</option>
+                                                        <option value="美元">美元</option>
+                                                        <option value="紐幣">紐幣</option>
+                                                        <option value="台幣">台幣</option>
+                                                        <option value="澳幣">澳幣</option>
+                                                        <option value="人民幣">人民幣</option>
+                                                        <option value="日幣">日幣</option>
+                                                        <option value="韓元">韓元</option>
+                                                        <option value="英鎊">英鎊</option>
+                                                        <option value="港幣">港幣</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <input
+                                            type="text"
+                                            class="keyword-input"
+                                            placeholder="請輸入關鍵字"
+                                        />
+                                    </div>
+                                    <button class="search-btn" type="button"><i class="fal fa-search mgr-1"></i>查詢</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="community">
+                            <div class="community-title">
+                                <i class="common-icon community-icon icon-lg mgr-1"></i>
+                                <h2><span>市場即時通 贏在起跑點</span></h2>
+                            </div>
+                            <div class="community-content">
+                                <a href="javascript:;" class="community-preview-img" style="background-image: url('./images/demo/community_demo.jpg');">
+                                    <div class="community-mask"></div>
+                                </a>
+                                <ul class="community-list">
+                                    <li class="community-item">
+                                        <a class="community-link" href="javascript:;">
+                                            <div class="date">2021/04/23</div>
+                                            <div class="content">日本1都3縣若緊急狀態1個月，經損估2.8兆、14.7萬人失業</div>
+                                        </a>
+                                    </li>
+                                    <li class="community-item">
+                                        <a class="community-link" href="javascript:;">
+                                            <div class="date">2021/04/20</div>
+                                            <div class="content">高通推Snapdragon 480 5G行動平台，加速全球5G商業化</div>
+                                        </a>
+                                    </li>
+                                    <div class="text-right pdt-2">
+                                        <a class="read-more" href="javascript:;"><i class="icon-readMore mgr-1"></i><span>查看更多</span></a>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- section-news -->
+                <section class="section section-news">
+                    <div class="news-container">
+                        <div class="news-title">
+                            <i class="common-icon section-news icon-lg mgr-1"></i>
+                            <h2><span>一點一滴累積投資雞湯文</span></h2>
+                        </div>
+                        <div class="news-content">
+                            <div id="news-tabs">
+                                <ul class="news-tabs-list">
+                                    <li class="news-tabs-item"><a data-label="頭條新聞" href="#news-tabs-topNews"></a></li>
+                                    <li class="news-tabs-item"><a data-label="國際財經" href="#news-tabs-internationalFinance"></a></li>
+                                    <li class="news-tabs-item"><a data-label="研究報告" href="#news-tabs-researchReport"></a></li>
+                                </ul>
+                                <div class="news-tabs-content" id="news-tabs-topNews">
+                                    <ul class="news-list">
+                                        <li class="news-item">
+                                            <a class="news-link" href="javascript:;">
+                                                <div class="date">2020/01/04</div>
+                                                <div class="content">選戰無論花落誰家 股票型基金仍為中長期佈局首選</div>
+                                            </a>
+                                        </li>
+                                        <li class="news-item">
+                                            <a class="news-link" href="javascript:;">
+                                                <div class="date">2020/12/30</div>
+                                                <div class="content">美大選之後「翻轉．從零開始」 2021投資致勝關鍵獨家解密</div>
+                                            </a>
+                                        </li>
+                                        <li class="news-item">
+                                            <a class="news-link" href="javascript:;">
+                                                <div class="date">2020/12/26</div>
+                                                <div class="content">德銀：Uber為今年首選股之一 股價有56%上行空間</div>
+                                            </a>
+                                        </li>
+                                        <div class="text-right pdt-4">
+                                            <a class="read-more" href="javascript:;"><i class="icon-readMore mgr-1"></i><span>查看更多</span></a>
+                                        </div>
+                                    </ul>
+                                </div>
+                                <div class="news-tabs-content" style="display: none;" id="news-tabs-internationalFinance">
+                                    <ul class="news-list">
+                                        <li class="news-item">
+                                            <a class="news-link" href="javascript:;">
+                                                <div class="date">2021/07/25</div>
+                                                <div class="content">選戰無論花落誰家 股票型基金仍為中長期佈局首選</div>
+                                            </a>
+                                        </li>
+                                        <li class="news-item">
+                                            <a class="news-link" href="javascript:;">
+                                                <div class="date">2020/05/30</div>
+                                                <div class="content">美大選之後「翻轉．從零開始」 2021投資致勝關鍵獨家解密</div>
+                                            </a>
+                                        </li>
+                                        <li class="news-item">
+                                            <a class="news-link" href="javascript:;">
+                                                <div class="date">2021/04/28</div>
+                                                <div class="content">德銀：Uber為今年首選股之一 股價有56%上行空間</div>
+                                            </a>
+                                        </li>
+                                        <div class="text-right pdt-4">
+                                            <a class="read-more" href="javascript:;"><i class="icon-readMore mgr-1"></i><span>查看更多</span></a>
+                                        </div>
+                                    </ul>
+                                </div>
+                                <div class="news-tabs-content" style="display: none;" id="news-tabs-researchReport">
+                                    <ul class="news-list">
+                                        <li class="news-item">
+                                            <a class="news-link" href="javascript:;">
+                                                <div class="date">2021/04/21</div>
+                                                <div class="content">選戰無論花落誰家 股票型基金仍為中長期佈局首選</div>
+                                            </a>
+                                        </li>
+                                        <li class="news-item">
+                                            <a class="news-link" href="javascript:;">
+                                                <div class="date">2021/04/20</div>
+                                                <div class="content">美大選之後「翻轉．從零開始」 2021投資致勝關鍵獨家解密</div>
+                                            </a>
+                                        </li>
+                                        <li class="news-item">
+                                            <a class="news-link" href="javascript:;">
+                                                <div class="date">2021/01/02</div>
+                                                <div class="content">德銀：Uber為今年首選股之一 股價有56%上行空間</div>
+                                            </a>
+                                        </li>
+                                        <div class="text-right pdt-4">
+                                            <a class="read-more" href="javascript:;"><i class="icon-readMore mgr-1"></i><span>查看更多</span></a>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- section-board -->
+                <section class="section section-board" id="section-board">
+                    <div class="board-container">
+                        <div class="board-title">
+                            <i class="common-icon section-board icon-lg mgr-2"></i>
+                            <h2><span>投資產品公告</span></h2>
+                        </div>
+                        <div class="board-content">
+                            <div id="board-tabs">
+                                <div class="board-tabs-container">
+                                    <a class="board-tabs-btn" id="board-tabs-btn-left" href="javascript:;"><i class="fal fa-angle-left"></i></a>
+                                    <div class="board-tabs-box">
+                                        <div class="under-line"></div>
+                                        <ul class="board-tabs-list">
+                                            <li class="board-tabs-item"><a href="#board-tabs-top3"></a>TOP3</li>
+                                            <li class="board-tabs-item"><a href="#board-tabs-fund"></a>基金</li>
+                                            <li class="board-tabs-item"><a href="#board-tabs-etf"></a>ETF</li>
+                                            <li class="board-tabs-item"><a href="#board-tabs-stock"></a>國外股票</li>
+                                            <li class="board-tabs-item"><a href="#board-tabs-bond"></a>國外債券</li>
+                                            <li class="board-tabs-item"><a href="#board-tabs-deposit"></a>存款</li>
+                                            <li class="board-tabs-item"><a href="#board-tabs-structure"></a>結構型商品</li>
+                                            <div class="board-tabs-active-line"></div>
+                                        </ul>
+                                    </div>
+                                    <a class="board-tabs-btn" id="board-tabs-btn-right" href="javascript:;"><i class="fal fa-angle-right"></i></a>
+                                </div>
+                                <div class="board-tabs-content" id="board-tabs-top3">
+                                    <ul class="board-list">
+                                        <li class="board-item">
+                                            <a class="board-link" href="javascript:;">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="date">2021/03/04</div>
+                                                    <div class="tag">國外基金</div>
+                                                </div>
+                                                <div class="content">陸加快功率半導體自製，兩大IGBT廠商推進A股上市<i class="common-icon pdf mgl-2"></i></div>
+                                            </a>
+                                        </li>
+                                        <li class="board-item">
+                                            <a class="board-link" href="javascript:;">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="date">2021/02/09</div>
+                                                    <div class="tag">基金</div>
+                                                </div>
+                                                <div class="content">韓國央行意外降息一碼至3% 營建與消費族群將受激勵</div>
+                                            </a>
+                                        </li>
+                                        <li class="board-item">
+                                            <a class="board-link" href="javascript:;">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="date">2021/02/04</div>
+                                                    <div class="tag">國外債券</div>
+                                                </div>
+                                                <div class="content">WFA將成2021年流行詞，舊金山辦公室轉租增、租金降</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="text-right pdt-3">
+                                        <a class="read-more" href="javascript:;"><i class="icon-readMore mgr-1"></i><span>查看更多</span></a>
+                                    </div>
+                                </div>
+                                <div class="board-tabs-content" style="display: none;" id="board-tabs-fund">
+                                    <ul class="board-list">
+                                        <li class="board-item">
+                                            <a class="board-link" href="javascript:;">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="date">2021/03/04</div>
+                                                    <div class="tag">基金</div>
+                                                </div>
+                                                <div class="content">陸加快功率半導體自製，兩大IGBT廠商推進A股上市<i class="common-icon pdf mgl-2"></i></div>
+                                            </a>
+                                        </li>
+                                        <li class="board-item">
+                                            <a class="board-link" href="javascript:;">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="date">2021/02/09</div>
+                                                    <div class="tag">基金</div>
+                                                </div>
+                                                <div class="content">韓國央行意外降息一碼至3% 營建與消費族群將受激勵</div>
+                                            </a>
+                                        </li>
+                                        <li class="board-item">
+                                            <a class="board-link" href="javascript:;">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="date">2021/02/04</div>
+                                                    <div class="tag">基金</div>
+                                                </div>
+                                                <div class="content">WFA將成2021年流行詞，舊金山辦公室轉租增、租金降</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="text-right pdt-3">
+                                        <a class="read-more" href="javascript:;"><i class="icon-readMore mgr-1"></i><span>查看更多</span></a>
+                                    </div>
+                                </div>
+                                <div class="board-tabs-content" style="display: none;" id="board-tabs-etf">
+                                    <ul class="board-list">
+                                        <li class="board-item">
+                                            <a class="board-link" href="javascript:;">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="date">2021/03/04</div>
+                                                    <div class="tag">ETF</div>
+                                                </div>
+                                                <div class="content">陸加快功率半導體自製，兩大IGBT廠商推進A股上市<i class="common-icon pdf mgl-2"></i></div>
+                                            </a>
+                                        </li>
+                                        <li class="board-item">
+                                            <a class="board-link" href="javascript:;">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="date">2021/02/09</div>
+                                                    <div class="tag">ETF</div>
+                                                </div>
+                                                <div class="content">韓國央行意外降息一碼至3% 營建與消費族群將受激勵</div>
+                                            </a>
+                                        </li>
+                                        <li class="board-item">
+                                            <a class="board-link" href="javascript:;">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="date">2021/02/04</div>
+                                                    <div class="tag">ETF</div>
+                                                </div>
+                                                <div class="content">WFA將成2021年流行詞，舊金山辦公室轉租增、租金降</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="text-right pdt-3">
+                                        <a class="read-more" href="javascript:;"><i class="icon-readMore mgr-1"></i><span>查看更多</span></a>
+                                    </div>
+                                </div>
+                                <div class="board-tabs-content" style="display: none;" id="board-tabs-stock">
+                                    <ul class="board-list">
+                                        <li class="board-item">
+                                            <a class="board-link" href="javascript:;">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="date">2021/03/04</div>
+                                                    <div class="tag">國外股票</div>
+                                                </div>
+                                                <div class="content">陸加快功率半導體自製，兩大IGBT廠商推進A股上市<i class="common-icon pdf mgl-2"></i></div>
+                                            </a>
+                                        </li>
+                                        <li class="board-item">
+                                            <a class="board-link" href="javascript:;">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="date">2021/02/09</div>
+                                                    <div class="tag">國外股票</div>
+                                                </div>
+                                                <div class="content">韓國央行意外降息一碼至3% 營建與消費族群將受激勵</div>
+                                            </a>
+                                        </li>
+                                        <li class="board-item">
+                                            <a class="board-link" href="javascript:;">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="date">2021/02/04</div>
+                                                    <div class="tag">國外股票</div>
+                                                </div>
+                                                <div class="content">WFA將成2021年流行詞，舊金山辦公室轉租增、租金降</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="text-right pdt-3">
+                                        <a class="read-more" href="javascript:;"><i class="icon-readMore mgr-1"></i><span>查看更多</span></a>
+                                    </div>
+                                </div>
+                                <div class="board-tabs-content" style="display: none;" id="board-tabs-bond">
+                                    <ul class="board-list">
+                                        <li class="board-item">
+                                            <a class="board-link" href="javascript:;">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="date">2021/03/04</div>
+                                                    <div class="tag">國外債券</div>
+                                                </div>
+                                                <div class="content">陸加快功率半導體自製，兩大IGBT廠商推進A股上市<i class="common-icon pdf mgl-2"></i></div>
+                                            </a>
+                                        </li>
+                                        <li class="board-item">
+                                            <a class="board-link" href="javascript:;">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="date">2021/02/09</div>
+                                                    <div class="tag">國外債券</div>
+                                                </div>
+                                                <div class="content">韓國央行意外降息一碼至3% 營建與消費族群將受激勵</div>
+                                            </a>
+                                        </li>
+                                        <li class="board-item">
+                                            <a class="board-link" href="javascript:;">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="date">2021/02/04</div>
+                                                    <div class="tag">國外債券</div>
+                                                </div>
+                                                <div class="content">WFA將成2021年流行詞，舊金山辦公室轉租增、租金降</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="text-right pdt-3">
+                                        <a class="read-more" href="javascript:;"><i class="icon-readMore mgr-1"></i><span>查看更多</span></a>
+                                    </div>
+                                </div>
+                                <div class="board-tabs-content" style="display: none;" id="board-tabs-deposit">
+                                    <ul class="board-list">
+                                        <li class="board-item">
+                                            <a class="board-link" href="javascript:;">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="date">2021/03/04</div>
+                                                    <div class="tag">存款</div>
+                                                </div>
+                                                <div class="content">陸加快功率半導體自製，兩大IGBT廠商推進A股上市<i class="common-icon pdf mgl-2"></i></div>
+                                            </a>
+                                        </li>
+                                        <li class="board-item">
+                                            <a class="board-link" href="javascript:;">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="date">2021/02/09</div>
+                                                    <div class="tag">存款</div>
+                                                </div>
+                                                <div class="content">韓國央行意外降息一碼至3% 營建與消費族群將受激勵</div>
+                                            </a>
+                                        </li>
+                                        <li class="board-item">
+                                            <a class="board-link" href="javascript:;">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="date">2021/02/04</div>
+                                                    <div class="tag">存款</div>
+                                                </div>
+                                                <div class="content">WFA將成2021年流行詞，舊金山辦公室轉租增、租金降</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="text-right pdt-3">
+                                        <a class="read-more" href="javascript:;"><i class="icon-readMore mgr-1"></i><span>查看更多</span></a>
+                                    </div>
+                                </div>
+                                <div class="board-tabs-content" style="display: none;" id="board-tabs-structure">
+                                    <ul class="board-list">
+                                        <li class="board-item">
+                                            <a class="board-link" href="javascript:;">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="date">2021/03/04</div>
+                                                    <div class="tag">結構型商品</div>
+                                                </div>
+                                                <div class="content">陸加快功率半導體自製，兩大IGBT廠商推進A股上市<i class="common-icon pdf mgl-2"></i></div>
+                                            </a>
+                                        </li>
+                                        <li class="board-item">
+                                            <a class="board-link" href="javascript:;">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="date">2021/02/09</div>
+                                                    <div class="tag">結構型商品</div>
+                                                </div>
+                                                <div class="content">韓國央行意外降息一碼至3% 營建與消費族群將受激勵</div>
+                                            </a>
+                                        </li>
+                                        <li class="board-item">
+                                            <a class="board-link" href="javascript:;">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="date">2021/02/04</div>
+                                                    <div class="tag">結構型商品</div>
+                                                </div>
+                                                <div class="content">WFA將成2021年流行詞，舊金山辦公室轉租增、租金降</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="text-right pdt-3">
+                                        <a class="read-more" href="javascript:;"><i class="icon-readMore mgr-1"></i><span>查看更多</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slogan">Anytime , Anywhere.</div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- footer -->
+            ##include('./components/footer.html')
+
+            <!-- backToTop -->
+            ##include('./components/backToTop.html')
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,2128 @@
+.home-page{
+    padding-top: 100px;
+    @media screen and (max-width: 1024px) {
+        padding-top: 60px;
+    }
+    @media screen and (max-width: 767px) {
+        padding-top: 50px;
+    }
+    ul.sidebar-list{
+        @media screen and (max-width: 767px) {
+            position: relative;
+            transform: translateY(0);
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            box-shadow: none;
+            display: flex;
+            padding: 0 10px;
+            z-index: 1;
+        }
+        li.sidebar-item{
+            @media screen and (max-width: 767px) {
+                flex: 1;
+                text-align: center;
+                border-bottom: 1px solid #E2DED4;
+                margin-bottom: 0;
+            }
+            .sidebar-link{
+                @media screen and (max-width: 767px) {
+                    padding: 5px;
+                }
+                .sidebar-icon{
+                    @media screen and (max-width: 767px) {
+                        background-color: transparent;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+    .home-wrapper{
+        position: relative;
+        section.section{
+            &.section-ranking{
+                width: 100%;
+                background-color: #F8F6F2;
+                background-image: url('../images/background/section_ranking_left_bg.png'), url('../images/background/section_ranking_right_bg.png');
+                background-position: left bottom, right bottom;
+                background-size: 19.4270833%, 19.0625%;
+                background-repeat: no-repeat;
+                padding: 15px;
+                padding-top: 55px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @media screen and (max-width: 1024px){
+                    background-color: #fff;
+                    background-image: none;
+                    padding: 0;
+                }
+                .ranking-container{
+                    max-width: 1140px;
+                    width: calc(100% - 30px);
+                    position: relative;
+                    top: 70px;
+                    @media screen and (max-width: 1024px){
+                        top: 0;
+                        width: 100%;
+                        padding: 20px 0;
+                    }
+                    @media screen and (max-width: 575px) {
+                        padding: 0;
+                    }
+                    .ranking-title{
+                        display: flex;
+                        align-items: center;
+                        padding: 20px 0;
+                        @media screen and (max-width: 1024px){
+                            padding: 20px 40px;
+                        }
+                        @media screen and (max-width: 575px){
+                            padding: 20px 15px;
+                        }
+                        h2{
+                            margin-bottom: 0;
+                            font-weight: bold;
+                            font-size: 28px;
+                            @media screen and (max-width: 575px) {
+                                font-size: 22px;
+                            }
+                        }
+                    }
+                    .ranking-content{
+                        width: 100%;
+                        padding: 30px;
+                        border-radius: 8px;
+                        background-color: #fff;
+                        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                        height: 700px;
+                        @media screen and (max-width: 1024px){
+                            box-shadow: none;
+                            padding: 0 40px;
+                            height: auto;
+                        }
+                        @media screen and (max-width: 575px){
+                            padding: 0 15px;
+                        }
+                        #ranking-tabs{
+                            ul.ranking-tabs-list{
+                                display: flex;
+                                margin-left: 10px;
+                                li.ranking-tabs-item{
+                                    background-color: #F3EEEE;
+                                    transform: skew(-20deg);
+                                    width: 172px;
+                                    height: 45px;
+                                    margin-right: 20px;
+                                    border-top-left-radius: 8px;
+                                    border-bottom-right-radius: 8px;
+                                    @media screen and (max-width: 575px){
+                                        width: 117px;
+                                        height: 54px;
+                                        margin-right: 10px;
+                                    }
+                                    a{
+                                        width: 100%;
+                                        height: 100%;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        font-size: 20px;
+                                        &:hover, &:active{
+                                            color: #E60000;
+                                        }
+                                        &::before{
+                                            content: attr(data-label);
+                                            transform: skew(20deg, 0deg);
+                                        }
+                                        @media screen and (max-width: 575px){
+                                            font-size: 16px;
+                                            text-align: center;
+                                            margin: 0 auto;
+                                            width: 63px;
+                                        }
+                                    }
+                                    &.ui-state-active{
+                                        background-color: #D61E1E;
+                                        a{
+                                            color: #fff;
+                                            font-weight: bold;
+                                        }
+                                    }
+                                }
+                            }
+                            .ranking-tabs-content{
+                                table{
+                                    margin-top: 15px;
+                                    & tbody + tbody{
+                                        border-top: 0;
+                                    }
+                                    thead{
+                                        display: table;
+                                        width: 100%;
+                                        position: relative;
+                                        z-index: 1;
+                                        background-color: #fff;
+                                        tr{
+                                            th{
+                                                font-size: 18px;
+                                                white-space: nowrap;
+                                                border-top: 0;
+                                                border-bottom: 2px solid #E60000;
+                                                &:not(:nth-child(2)){
+                                                    width: 115px;
+                                                    text-align: center;
+                                                }
+                                                @media screen and (max-width: 767px){
+                                                    font-size: 16px;
+                                                    &:not(:nth-child(2)){
+                                                        width: 90px;
+                                                    }
+                                                }
+                                                @media screen and (max-width: 575px){
+                                                    font-size: 12px;
+                                                    padding: 12px 4px;
+                                                    &:not(:nth-child(2)){
+                                                        width: 55px;
+                                                    }
+                                                    &:last-child{
+                                                        width: 80px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    tbody{
+                                        display: block;
+                                        overflow-y: auto;
+                                        overflow-x: hidden;
+                                        height: 500px;
+                                        width: calc(100% + 18px);
+                                        padding-right: 10px;
+                                        // scrollbar-arrow-color: #555;
+                                        // scrollbar-base-color: #BDBDBD;
+                                        // scrollbar-shadow-color: #BDBDBD;
+                                        // scrollbar-track-color: #E0E0E0;
+                                        @media screen and (max-width: 1024px){
+                                            overflow-y: hidden;
+                                            padding-right: 0;
+                                            width: 100%;
+                                        }
+                                        &.ranking-tabs-pc{
+                                            @media screen and (max-width: 1024px){
+                                                display: none;
+                                            }
+                                        }
+                                        &.ranking-tabs-mobile{
+                                            display: none;
+                                            height: auto;
+                                            @media screen and (max-width: 1024px){
+                                                display: block;
+                                            }
+                                        }
+                                        &::-webkit-scrollbar {
+                                            width: 8px;
+                                        }
+                                        &::-webkit-scrollbar-track {
+                                            -webkit-border-radius: 100px;
+                                            margin: 5px 0;
+                                            background-color: #E0E0E0;
+                                        }
+                                        &::-webkit-scrollbar-thumb {
+                                            -webkit-border-radius: 100px;
+                                            border-radius: 100px;
+                                            background-color: #BDBDBD;
+                                        }
+                                        tr{
+                                            display: table;
+                                            width: 100%;
+                                            table-layout: fixed;
+                                            &:first-child{
+                                                border-top: 0;
+                                            }
+                                            td{
+                                                font-size: 18px;
+                                                vertical-align: middle;
+                                                text-align: center;
+                                                a.ranking-tabs-link{
+                                                    font-weight: bold;
+                                                    text-align: left;
+                                                    color: #212529;
+                                                    display: block;
+                                                    &:hover{
+                                                        color: #E60000;
+                                                    }
+                                                }
+                                                .change{
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                    &.red{
+                                                        color: #E60000;
+                                                    }
+                                                    &.green{
+                                                        color: #1AB11E;
+                                                        i{
+                                                            transform: rotate(180deg);
+                                                        }
+                                                    }
+                                                    .count{
+                                                        min-width: 80px;
+                                                        text-align: center;
+                                                        @media screen and (max-width: 767px){
+                                                            min-width: auto;
+                                                        }
+                                                    }
+                                                    i{
+                                                        font-size: 12px;
+                                                    }
+                                                }
+                                                &:not(:nth-child(2)){
+                                                    width: 115px;
+                                                }
+                                                @media screen and (max-width: 767px){
+                                                    font-size: 16px;
+                                                    &:not(:nth-child(2)){
+                                                        width: 90px;
+                                                    }
+                                                }
+                                                @media screen and (max-width: 575px){
+                                                    font-size: 12px;
+                                                    padding: 12px 4px;
+                                                    &:not(:nth-child(2)){
+                                                        width: 55px;
+                                                    }
+                                                    &:last-child{
+                                                        width: 80px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        nav.pagination-nav{
+                            display: none;
+                            justify-content: center;
+                            align-items: center;
+                            padding-bottom: 15px;
+                            @media screen and (max-width: 1024px){
+                                display: flex;
+    
+                            }
+                            a.page-arrow{
+                                border: 0;
+                                padding: 5px;
+                                width: 40px;
+                                height: 31px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                i{
+                                    font-size: 20px;
+                                    color: #E9E5DD;
+                                }
+                            }
+                            ul.pagination{
+                                & li + li{
+                                    margin-left: 8px;
+                                }
+                                li.page-item{
+                                    a.page-link{
+                                        background-color: #F3EEEE;
+                                        color: #544545;
+                                        padding: 0 5px;
+                                        min-width: 40px;
+                                        height: 31px;
+                                        border-radius: 4px;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        border: 0;
+                                        &:focus{
+                                            box-shadow: none;
+                                        }
+                                        &:active{
+                                            background-color: #FFEBE9;
+                                        }
+                                    }
+                                    &.active{
+                                        a.page-link{
+                                            background-color: #E60000;
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.section-computer{
+                width: 100%;
+                height: 821px;
+                background-color: #D61E1E;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @media screen and (max-width: 1199px){
+                    height: auto;
+                }
+                .computer-container{
+                    max-width: 1200px;
+                    padding: 0 30px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: 30px;
+                    @media screen and (max-width: 1199px){
+                        flex-direction: column;
+                        margin-top: 0;
+                        padding: 80px 0 50px 0;
+                    }
+                    @media screen and (max-width: 1024px){
+                        padding: 30px 0 50px 0;
+                    }
+                    @media screen and (max-width: 575px){
+                        padding: 20px 0;
+                    }
+                    .calculator{
+                        width: 718px;
+                        @media screen and (max-width: 1199px){
+                            width: 100%;
+                            margin-bottom: 20px;
+                        }
+                        @media screen and (max-width: 575px){
+                            order: 3;
+                            margin-bottom: 0;
+                        }
+                        .calculator-title{
+                            display: flex;
+                            align-items: center;
+                            padding: 20px 0;
+                            color: #fff;
+                            @media screen and (max-width: 1199px){
+                                padding: 20px 40px;
+                            }
+                            @media screen and (max-width: 575px){
+                                padding: 20px 15px;
+                            }
+                            h2{
+                                margin-bottom: 0;
+                                font-weight: bold;
+                                font-size: 28px;
+                                color: #fff;
+                                @media screen and (max-width: 575px) {
+                                    font-size: 22px;
+                                }
+                            }
+                        }
+                        .calculator-content{
+                            background-color: #fff;
+                            border-radius: 5px;
+                            width: 100%;
+                            @media screen and (max-width: 1199px){
+                                width: calc(100% - 80px);
+                                margin: 0 auto;
+                            }
+                            @media screen and (max-width: 575px){
+                                width: calc(100% - 30px);
+                            }
+                            #calculator-tabs{
+                                width: 100%;
+                                height: 100%;
+                                &.calculator-tabs-content + .calculator-tabs-content{
+                                    display: none;
+                                }
+                                ul.calculator-tabs-list{
+                                    display: flex;
+                                    justify-content: center;
+                                    position: relative;
+                                    &::before{
+                                        content: "";
+                                        width: 100%;
+                                        height: 2px;
+                                        position: absolute;
+                                        bottom: 0;
+                                        left: 0;
+                                        background-color: #E9E5DD;
+                                    }
+                                    li.calculator-tabs-item{
+                                        display: flex;
+                                        @media screen and (max-width: 575px){
+                                            width: 50%;
+                                        }
+                                        a{
+                                            padding: 18px 60px;
+                                            width: 100%;
+                                            height: 100%;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            font-size: 20px;
+                                            font-weight: bold;
+                                            color: #998A8A;
+                                            &:hover{
+                                                color: #E60000;
+                                            }
+                                            &::before{
+                                                content: attr(data-label);
+                                            }
+                                            @media screen and (max-width: 575px){
+                                                font-size: 16px;
+                                                text-align: center;
+                                                margin: 0 auto;
+                                                font-weight: normal;
+                                                padding: 18px 0;
+                                            }
+                                            i{
+                                                font-size: 24px;
+                                            }
+                                        }
+                                        &.ui-state-active{
+                                            a{
+                                                color: #E60000;
+                                            }
+                                            @media screen and (max-width: 575px){
+                                                a{
+                                                    font-weight: bold;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .calculator-tabs-active-line{
+                                        position: absolute;
+                                        bottom: 0;
+                                        height: 2px;
+                                        background-color: #E60000;
+                                        transition: all 0.3s ease;
+                                    }
+                                }
+                                .calculator-tabs-content{
+                                    height: calc(100% - 66px);
+                                    #singleInvestment-tabs, #dollarCostAveraging-tabs{
+                                        ul.calculator-common-tabs-list{
+                                            display: flex;
+                                            justify-content: center;
+                                            @media screen and (max-width: 767px){
+                                                flex-wrap: wrap;
+                                                padding: 10px 0;
+                                            }
+                                            @media screen and (max-width: 575px){
+                                                font-size: 16px;
+                                                padding: 7px 0;
+                                            }
+                                            li.calculator-common-tabs-item{
+                                                @media screen and (max-width: 767px){
+                                                    width: 50%;
+                                                }
+                                                a{
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    padding: 20px 13px;
+                                                    font-weight: bold;
+                                                    font-size: 18px;
+                                                    @media screen and (max-width: 1024px){
+                                                        padding: 20px 10px;
+                                                    }
+                                                    @media screen and (max-width: 767px){
+                                                        justify-content: flex-start;
+                                                        padding: 10px 0;
+                                                        padding-left: 20px;
+                                                        font-size: 16px;
+                                                    }
+                                                    @media screen and (max-width: 575px){
+                                                        font-size: 14px;
+                                                    }
+                                                    @media screen and (max-width: 374px){
+                                                        font-size: 12px;
+                                                        padding: 7px 0;
+                                                        padding-left: 10px;
+                                                    }
+                                                    &:hover{
+                                                        color: #E60000;
+                                                        i{
+                                                            border: 1px solid #E60000;
+                                                        }
+                                                    }
+                                                    i{
+                                                        width: 24px;
+                                                        height: 24px;
+                                                        margin-right: 5px;
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                        border-radius: 50%;
+                                                        border: 1px solid #544545;
+                                                        margin-bottom: 2px;
+                                                        font-size: 14px;
+                                                        @media screen and (max-width: 414px){
+                                                            width: 20px;
+                                                            height: 20px;
+                                                            font-size: 12px;
+                                                        }
+                                                    }
+                                                }
+                                                &.ui-state-active{
+                                                    a{
+                                                        color: #E60000;
+                                                        i{
+                                                            background-color: #E60000;
+                                                            color: #fff;
+                                                            border: 0;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .calculator-common-tabs-content{
+                                            width: calc(100% - 60px);
+                                            margin: 0 auto;
+                                            @media screen and (max-width: 767px){
+                                                width: calc(100% - 40px);
+                                            }
+                                            @media screen and (max-width: 575px){
+                                                width: 100%;
+                                            }
+                                            .calculator-common-tabs-label{
+                                                font-size: 18px;
+                                                @media screen and (max-width: 575px){
+                                                    display: none;
+                                                }
+                                            }
+                                            .calculator-common-tabs-box{
+                                                margin-top: 10px;
+                                                filter: drop-shadow(0px -1px 4px rgba(0, 0, 0, 0.05));
+                                                @media screen and (max-width: 575px){
+                                                    filter: none;
+                                                    margin-top: 0;
+                                                }
+                                                ul.calculator-list{
+                                                    padding: 30px 20px;
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    justify-content: space-between;
+                                                    background-color: #FFF7F6;
+                                                    height: 224px;
+                                                    border-radius: 5px 5px 0 0;
+                                                    @media screen and (max-width: 767px){
+                                                        height: auto;
+                                                        padding: 0 20px 30px 20px;
+                                                    }
+                                                    @media screen and (max-width: 575px){
+                                                        border-radius: 0;
+                                                        padding: 0 15px 20px 15px;
+                                                    }
+                                                    li.calculator-item{
+                                                        display: flex;
+                                                        align-items: center;
+                                                        @media screen and (max-width: 767px){
+                                                            flex-wrap: wrap;
+                                                        }
+                                                        label{
+                                                            padding-left: 20px;
+                                                            position: relative;
+                                                            margin-bottom: 0;
+                                                            width: 180px;
+                                                            font-size: 18px;
+                                                            font-weight: bold;
+                                                            @media screen and (max-width: 767px){
+                                                                width: 100%;
+                                                                margin-top: 20px;
+                                                                margin-bottom: 10px;
+                                                            }
+                                                            @media screen and (max-width: 575px){
+                                                                font-size: 16px;
+                                                                margin-top: 15px;
+                                                                margin-bottom: 5px;
+                                                            }
+                                                            &::before{
+                                                                content: "\f054";
+                                                                font-family: "Font Awesome 5 Pro";
+                                                                position: absolute;
+                                                                top: 50%;
+                                                                left: 0;
+                                                                transform: translateY(-50%);
+                                                                color: #EE5142;
+                                                                font-weight: 400;
+                                                            }
+                                                        }
+                                                        .input-text-group{
+                                                            width: 180px;
+                                                            max-width: 180px;
+                                                            display: flex;
+                                                            align-items: center;
+                                                            justify-content: space-between;
+                                                            border: 1px solid #E2DED4;
+                                                            background-color: #fff;
+                                                            border-radius: 10px;
+                                                            @media screen and (max-width: 575px){
+                                                                width: 100%;
+                                                                max-width: none;
+                                                                border-radius: 4px;
+                                                                height: 44px;
+                                                            }
+                                                            input.calculator-input{
+                                                                width: 1px;
+                                                                flex: 1;
+                                                                padding: 5px 0 5px 10px;
+                                                                color: #EE5142;
+                                                                font-size: 22px;
+                                                                border: 0;
+                                                                border-radius: 10px 0 0 10px;
+                                                                @media screen and (max-width: 575px){
+                                                                    border-radius: 4px 0 0 4px;
+                                                                    font-size: 16px;
+                                                                }
+                                                                &:focus{
+                                                                    outline: none;
+                                                                }
+                                                                &::placeholder{
+                                                                    color: #EE5142;
+                                                                }
+                                                            }
+                                                            .input-desc{
+                                                                font-size: 18px;
+                                                                font-weight: bold;
+                                                                margin-right: 10px;
+                                                                @media screen and (max-width: 575px){
+                                                                    font-size: 16px;
+                                                                }
+                                                            }
+                                                        }
+                                                        .input-range-group{
+                                                            margin-left: 20px;
+                                                            flex: 1;
+                                                            height: 100%;
+                                                            display: flex;
+                                                            flex-direction: column;
+                                                            justify-content: space-between;
+                                                            @media screen and (max-width: 767px){
+                                                                height: 37px;
+                                                            }
+                                                            @media screen and (max-width: 575px){
+                                                                display: none;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                .calculator-result{
+                                                    padding: 10px 0;
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                    font-weight: bold;
+                                                    font-size: 18px;
+                                                    background-color: #FFEBE9;
+                                                    border-radius: 0 0 5px 5px;
+                                                    @media screen and (max-width: 575px){
+                                                        font-size: 16px;
+                                                    }
+                                                    label{
+                                                        margin-bottom: 0;
+                                                    }
+                                                    span.result{
+                                                        margin-left: 15px;
+                                                        font-size: 22px;
+                                                        color: #E60000;
+                                                        @media screen and (max-width: 575px){
+                                                            font-size: 20px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .warning-label-pc{
+                                            padding: 20px 30px;
+                                            font-size: 14px;
+                                            @media screen and (max-width: 575px){
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .warning-label-mobile{
+                            font-size: 14px;
+                            color: #fff;
+                            padding: 15px;
+                            display: none;
+                            @media screen and (max-width: 575px){
+                                display: block;
+                            }
+                        }
+                    }
+                    .filter{
+                        position: absolute;
+                        top: -15px;
+                        left: 50%;
+                        transform: translate(-50%, 0);
+                        width: calc(100% - 60px);
+                        max-width: 1200px;
+                        height: 110px;
+                        z-index: 1;
+                        @media screen and (max-width: 1024px){
+                            position: relative;
+                            top: 0;
+                            left: 0;
+                            transform: translateX(0);
+                            width: 100%;
+                            height: auto;
+                            max-width: none;
+                            margin-bottom: 20px;
+                        }
+                        @media screen and (max-width: 575px){
+                            order: 2;
+                            padding-top: 20px;
+                        }
+                        .filter-title{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            height: 41px;
+                            padding-top: 10px;
+                            width: 180px;
+                            color: #fff;
+                            position: absolute;
+                            top: -39px;
+                            left: 0;
+                            border-top-right-radius: 8px;
+                            border-top-left-radius: 8px;
+                            background-color: #E02626;
+                            @media screen and (max-width: 1024px){
+                                background-color: transparent;
+                                justify-content: flex-start;
+                                height: auto;
+                                padding-top: 0;
+                                padding: 20px 40px;
+                                width: 100%;
+                                position: relative;
+                                top: 0;
+                                border-top-right-radius: 0;
+                                border-top-left-radius: 0;
+                            }
+                            @media screen and (max-width: 575px){
+                                padding: 20px 15px;
+                            }
+                            i{
+                                @media screen and (max-width: 1024px){
+                                    width: 30px;
+                                }
+                            }
+                            h2{
+                                margin-bottom: 0;
+                                font-weight: bold;
+                                font-size: 24px;
+                                color: #fff;
+                                @media screen and (max-width: 1024px){
+                                    font-size: 28px;
+                                }
+                                @media screen and (max-width: 575px) {
+                                    font-size: 22px;
+                                }
+                            }
+                        }
+                        .filter-content{
+                            border-radius: 8px;
+                            border-top-left-radius: 0;
+                            background-color: #E02626;
+                            width: 100%;
+                            height: 100%;
+                            padding: 30px;
+                            @media screen and (max-width: 1024px){
+                                padding: 0;
+                                background-color: transparent;
+                                width: calc(100% - 80px);
+                                margin: 0 auto;
+                            }
+                            @media screen and (max-width: 575px){
+                                padding: 0;
+                                background-color: transparent;
+                                width: calc(100% - 30px);
+                                margin: 0 auto;
+                            }
+                            form.filter-form{
+                                height: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                @media screen and (max-width: 1024px){
+                                    flex-direction: column;
+                                    height: auto;
+                                }
+                                .form-container{       
+                                    display: flex;
+                                    align-items: center;
+                                    flex: 1;
+                                    border-radius: 5px;
+                                    & .select-box + .select-box{
+                                        margin-left: -1px;
+                                    }
+                                    @media screen and (max-width: 1024px){
+                                        flex-direction: column;
+                                        flex: none;
+                                        width: 100%;
+                                        height: 204px;
+                                    }
+                                    @media screen and (max-width: 575px){
+                                        height: 160px;
+                                    }
+                                    .select-box{
+                                        flex: 1;
+                                        position: relative;
+                                        @media screen and (max-width: 1024px){
+                                            width: 100%;
+                                            height: auto;
+                                            flex: none;
+                                        }
+                                        &.company-box{
+                                            .select-pc{
+                                                > button{
+                                                    border-radius: 5px 0 0 5px;
+                                                }
+                                            }
+                                        }
+                                        &.area-box{
+                                            @media screen and (max-width: 1024px){
+                                                flex: 1;
+                                                .select-mobile{
+                                                    select{
+                                                        border-radius: 8px 0 0 8px;
+                                                    }
+                                                }
+                                            }
+                                            @media screen and (max-width: 575px){
+                                                .select-mobile{
+                                                    select{
+                                                        border-radius: 4px 0 0 4px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        &.exchange-box{
+                                            @media screen and (max-width: 1024px){
+                                                width: 250px;
+                                                min-width: 250px;
+                                                max-width: 250px;
+                                                .select-mobile{
+                                                    position: relative;
+                                                    &::before{
+                                                        content: "";
+                                                        width: 1px;
+                                                        height: 32px;
+                                                        background-color: #F57062;
+                                                        position: absolute;
+                                                        top: 50%;
+                                                        left: 0;
+                                                        transform: translateY(-50%);
+                                                    }
+                                                    select{
+                                                        border-radius: 0 8px 8px 0;
+                                                    }
+                                                }
+                                            }
+                                            @media screen and (max-width: 767px){
+                                                width: 150px;
+                                                min-width: 150px;
+                                                max-width: 150px;
+                                            }
+                                            @media screen and (max-width: 575px){
+                                                width: 120px;
+                                                min-width: 120px;
+                                                max-width: 120px;
+                                                .select-mobile{
+                                                    &::before{
+                                                        height: 24px;
+                                                    }
+                                                    select{
+                                                        border-radius: 0 4px 4px 0;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .select-pc{
+                                            width: 100%;
+                                            height: 100%;
+                                            @media screen and (max-width: 1024px){
+                                                display: none;
+                                            }
+                                            .dropdown-toggle{
+                                                width: 100%;
+                                                height: 100%;
+                                                text-align: left;
+                                                position: relative;
+                                                background-color: #fff;
+                                                border-radius: 0;
+                                                border: 0;
+                                                color: #E60000;
+                                                font-size: 18px;
+                                                padding: 0px 15px;
+                                                &#selectCompany, &#selectArea, &#selectExchange{
+                                                    height: 50px;
+                                                }
+                                                &:focus{
+                                                    box-shadow: none;
+                                                }
+                                                &::before{
+                                                    content: "";
+                                                    position: absolute;
+                                                    right: 1px;
+                                                    top: 50%;
+                                                    transform: translateY(-50%);
+                                                    height: 24px;
+                                                    width: 1px;
+                                                    background-color: #F57062;
+                                                }
+                                                &::after{
+                                                    content: "\f078";
+                                                    font-family: "Font Awesome 5 Pro";
+                                                    position: absolute;
+                                                    top: 50%;
+                                                    right: 15px;
+                                                    transform: translateY(-50%);
+                                                    color: #E60000;
+                                                    border: 0;
+                                                }
+                                            }
+                                            .dropdown-menu{
+                                                min-width: 100%;
+                                                border-radius: 5px;
+                                                padding-right: 10px;
+                                                .dropdown-container{
+                                                    height: auto;
+                                                    max-height: 200px;
+                                                    overflow-x: hidden;
+                                                    &::-webkit-scrollbar {
+                                                        width: 5px;
+                                                    }
+                                                    &::-webkit-scrollbar-track {
+                                                        -webkit-border-radius: 100px;
+                                                        background-color: #E0E0E0;
+                                                    }
+                                                    &::-webkit-scrollbar-thumb {
+                                                        -webkit-border-radius: 100px;
+                                                        border-radius: 100px;
+                                                        background-color: #BDBDBD;
+                                                    }
+                                                }
+                                                .dropdown-item{
+                                                    height: 40px;
+                                                    color: #544545;
+                                                    display: flex;
+                                                    align-items: center;
+                                                    padding: 0 15px;
+                                                    &:hover{
+                                                        background-color: #FFF7F6;
+                                                        color: #EE5142;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        .select-mobile{
+                                            display: none;
+                                            position: relative;
+                                            margin-bottom: 10px;
+                                            // height: 58px;
+                                            &::after{
+                                                content: "\f078";
+                                                font-family: "Font Awesome 5 Pro";
+                                                position: absolute;
+                                                top: 50%;
+                                                right: 15px;
+                                                transform: translateY(-50%);
+                                                color: #E60000;
+                                                border: 0;
+                                            }
+                                            select{
+                                                background-color: #fff;
+                                                border: 0;
+                                                color: #E60000;
+                                                width: 100%;
+                                                border-radius: 8px;
+                                                padding: 20px 15px;
+                                                cursor: pointer;
+                                                option{
+                                                    color: #544545;
+                                                }
+                                                &:focus{
+                                                    outline: none;
+                                                }
+                                                @media screen and (max-width: 575px){
+                                                    padding: 14px 15px;
+                                                    border-radius: 4px;
+                                                    font-size: 14px;
+                                                }
+                                            }
+                                            @media screen and (max-width: 1024px){
+                                                display: block;
+                                            }
+                                        }
+                                    }
+                                    .keyword-input{
+                                        height: 50px;
+                                        width: 300px;
+                                        border: 0;
+                                        border-radius: 0 5px 5px 0;
+                                        font-size: 18px;
+                                        padding: 0 15px;
+                                        margin-left: -1px;
+                                        @media screen and (max-width: 1024px){
+                                            margin-left: 0;
+                                            width: 100%;
+                                            padding: 19px 15px;
+                                            border-radius: 8px;
+                                            margin-bottom: 10px;
+                                            height: auto;
+                                        }
+                                        @media screen and (max-width: 575px){
+                                            border-radius: 4px;
+                                            font-size: 14px;
+                                            padding: 13px 15px;
+                                        }
+                                        &::placeholder{
+                                            color: #E60000;
+                                        }
+                                        &:focus{
+                                            outline: none;
+                                            color: #E60000;
+                                        }
+                                    }
+                                }
+                                .search-btn{
+                                    height: 100%;
+                                    border: 0;
+                                    width: 117px;
+                                    min-width: 117px;
+                                    border-radius: 5px;
+                                    background-color: #F57062;
+                                    color: #fff;
+                                    font-size: 18px;
+                                    margin-left: 15px;
+                                    @media screen and (max-width: 1024px){
+                                        height: 60px;
+                                        width: 100%;
+                                        border-radius: 8px;
+                                        margin-left: 0;
+                                    }
+                                    @media screen and (max-width: 575px){
+                                        height: 44px;
+                                        border-radius: 4px;
+                                        font-size: 16px;
+                                    }
+                                    &:hover{
+                                        background-color: #EE5142;
+                                    }
+                                    &:focus{
+                                        background-color: #E60000;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .community{
+                        width: 406px;
+                        @media screen and (max-width: 1199px){
+                            width: 100%;
+                        }
+                        @media screen and (max-width: 575px){
+                            order: 1;
+                        }
+                        .community-title{
+                            display: flex;
+                            align-items: center;
+                            padding: 20px 0;
+                            color: #fff;
+                            @media screen and (max-width: 1199px){
+                                padding: 20px 40px;
+                            }
+                            @media screen and (max-width: 575px){
+                                padding: 20px 15px;
+                            }
+                            h2{
+                                margin-bottom: 0;
+                                font-weight: bold;
+                                font-size: 28px;
+                                color: #fff;
+                                @media screen and (max-width: 575px) {
+                                    font-size: 22px;
+                                }
+                            }
+                        }
+                        .community-content{
+                            background-color: #fff;
+                            border-radius: 5px;
+                            width: 100%;
+                            padding: 27px;
+                            display: flex;
+                            flex-direction: column;
+                            @media screen and (max-width: 1199px){
+                                height: 293px;
+                                flex-direction: row;
+                                padding: 27px 15px;
+                                width: calc(100% - 80px);
+                                margin: 0 auto;
+                            }
+                            @media screen and (max-width: 575px){
+                                height: auto;
+                                flex-direction: column;
+                                padding: 20px 15px;
+                                width: calc(100% - 30px);
+                            }
+                            a.community-preview-img{
+                                border-radius: 8px;
+                                width: 100%;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                                background-size: cover;
+                                position: relative;
+                                overflow: hidden;
+                                display: block;
+                                @media screen and (max-width: 1199px){
+                                    max-width: 400px;
+                                    min-width: 200px;
+                                }
+                                @media screen and (max-width: 575px){
+                                    max-width: none;
+                                    min-width: auto;
+                                    width: 100%;
+                                }
+                                &.active{
+                                    .community-mask{
+                                        background-color: rgba(230,0,0,0.7);
+                                    }
+                                }
+                                // &:hover{
+                                //     .community-mask{
+                                //         background-color: rgba(230,0,0,0.7);
+                                //     }
+                                // }
+                                &::before{
+                                    content: "";
+                                    display: block;
+                                    padding-top: 64.4886364%;
+                                }
+                                &::after{
+                                    content: "影音";
+                                    position: absolute;
+                                    padding: 7px 17px;
+                                    top: 0;
+                                    left: 0;
+                                    background-color: #F53535;
+                                    color: #fff;
+                                    font-size: 20px;
+                                    font-weight: bold;
+                                }
+                                .community-mask{
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 50%;
+                                    transform: translate(-50%, -50%);
+                                    width: 64px;
+                                    height: 64px;
+                                    border-radius: 50%;
+                                    background-color: rgba(53,53,53,0.7);
+                                    &::before{
+                                        content: "";
+                                        width: 0;
+                                        height: 0;
+                                        border-style: solid;
+                                        border-width: 15px 0 15px 20px;
+                                        border-color: transparent transparent transparent #ffffff;
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 55%;
+                                        transform: translate(-50%, -50%);
+                                    }
+                                }
+                            }
+                            ul.community-list{
+                                @media screen and (max-width: 1199px){
+                                    width: 100%;
+                                    margin-left: 20px;
+                                }
+                                @media screen and (max-width: 575px){
+                                    width: auto;
+                                    margin-left: 0;
+                                }
+                                li.community-item{
+                                    a.community-link{
+                                        display: block;
+                                        padding: 11px 0;
+                                        border-bottom: 1px solid #E2DED4;
+                                        position: relative;
+                                        @media screen and (max-width: 575px){
+                                            padding: 15px 0;
+                                        }
+                                        &::before{
+                                            content: "";
+                                            position: absolute;
+                                            background-color: #E60000;
+                                            transition: all 0.4s ease;
+                                            width: 0%;
+                                            bottom: 0;
+                                            right: 0;
+                                            height: 1px;
+                                        }
+                                        &.active{
+                                            &::before{
+                                                right: auto;
+                                                left: 0;
+                                                width: 100%;
+                                            }
+                                        }
+                                        // &:hover::before{
+                                        //     right: auto;
+                                        //     left: 0;
+                                        //     width: 100%;
+                                        // }
+                                        .date{
+                                            color: #998A8A;
+                                            @media screen and (max-width: 575px){
+                                                font-size: 14px;
+                                            }
+                                        }
+                                        .content{
+                                            font-size: 18px;
+                                            font-weight: bold;
+                                            color: #544545;
+                                            overflow: hidden;
+                                            text-overflow: ellipsis;
+                                            display: -webkit-box;
+                                            -webkit-line-clamp: 2;
+                                            -webkit-box-orient: vertical;
+                                            height: 54px;
+                                            margin-top: 5px;
+                                            @media screen and (max-width: 575px){
+                                                font-size: 14px;
+                                                height: auto;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.section-news{
+                width: 100%;
+                padding-top: 120px;
+                background-color: #F8F6F2;
+                position: relative;
+                @media screen and (max-width: 1024px){
+                    padding-top: 30px;
+                }
+                .news-container{
+                    width: 100%;
+                    margin: 0 auto;
+                    position: relative;
+                    &::before{
+                        content: "";
+                        width: 100%;
+                        height: 431px;
+                        position: absolute;
+                        right: 285px;
+                        bottom: 0;
+                        background-color: #FFE4E2;
+                        border-top-right-radius: 16px;
+                        border-bottom-right-radius: 16px;
+                        @media screen and (max-width: 767px) {
+                            display: none;
+                        }
+                    }
+                    &::after{
+                        content: "";
+                        width: 45%;
+                        height: 421px;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        border-top-left-radius: 16px;
+                        border-bottom-left-radius: 16px;
+                        background-image: url("../images/background/section_news_bg_pc.jpg");
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        @media screen and (max-width: 1024px){
+                            top: 30px;
+                            width: 38%;
+                        }
+                        @media screen and (max-width: 767px) {
+                            width: 100%;
+                            top: 78px;
+                            display: block;
+                            padding-top: 68.2291667%;
+                            border-top-left-radius: 0;
+                            border-bottom-left-radius: 0;
+                            background-image: url("../images/background/section_news_bg_mobile.jpg");
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            height: auto;
+                        }
+                    }
+                    .news-title{
+                        max-width: 1200px;
+                        margin: 0 auto;
+                        display: flex;
+                        align-items: center;
+                        padding: 20px 30px;
+                        @media screen and (max-width: 1024px){
+                            padding: 20px 40px;
+                        }
+                        @media screen and (max-width: 575px){
+                            padding: 20px 15px;
+                        }
+                        h2{
+                            margin-bottom: 0;
+                            font-weight: bold;
+                            font-size: 28px;
+                            @media screen and (max-width: 575px) {
+                                font-size: 22px;
+                            }
+                        }
+                    }
+                    .news-content{
+                        border-radius: 4px;
+                        width: 100%;
+                        padding: 30px;
+                        max-width: 1200px;
+                        position: relative;
+                        z-index: 1;
+                        margin: 0 auto;
+                        height: 431px;
+                        background-color: transparent;
+                        @media screen and (max-width: 1024px) {
+                            padding: 30px 15px;
+                        }
+                        @media screen and (max-width: 767px) {
+                            height: auto;
+                            width: calc(100% - 80px);
+                            background-color: #FFE4E2;
+                            padding: 20px;
+                            margin-top: 250px;
+                        }
+                        @media screen and (max-width: 575px) {
+                            height: auto;
+                            width: calc(100% - 30px);
+                            padding: 20px 0;
+                            margin-top: 200px;
+                        }
+                        @media screen and (max-width: 414px) {
+                            margin-top: 150px;
+                        }
+                        #news-tabs{
+                            max-width: calc(100% - 45%);
+                            @media screen and (max-width: 1024px){
+                                max-width: calc(100% - 38%);
+                            }
+                            @media screen and (max-width: 767px){
+                                max-width: 100%;
+                            }
+                            ul.news-tabs-list{
+                                display: flex;
+                                margin-left: 10px;
+                                margin-bottom: 10px;
+                                @media screen and (max-width: 575px){
+                                    padding: 0 5px;
+                                    justify-content: center;
+                                }
+                                li.news-tabs-item{
+                                    background-color: #FFFFFF;
+                                    transform: skew(-20deg);
+                                    width: 132px;
+                                    height: 45px;
+                                    margin-right: 15px;
+                                    border-top-left-radius: 8px;
+                                    border-bottom-right-radius: 8px;
+                                    a{
+                                        width: 100%;
+                                        height: 100%;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        font-size: 20px;
+                                        &:hover, &:active{
+                                            color: #E60000;
+                                        }
+                                        &::before{
+                                            content: attr(data-label);
+                                            transform: skew(20deg, 0deg);
+                                        }
+                                        @media screen and (max-width: 575px){
+                                            font-size: 16px;
+                                            text-align: center;
+                                            margin: 0 auto;
+                                        }
+                                    }
+                                    &.ui-state-active{
+                                        background-color: #D61E1E;
+                                        a{
+                                            color: #fff;
+                                            font-weight: bold;
+                                        }
+                                    }
+                                }
+                            }
+                            .news-tabs-content{
+                                ul.news-list{
+                                    @media screen and (max-width: 575px) {
+                                        padding: 0 15px;
+                                    }
+                                    li.news-item{
+                                        @media screen and (max-width: 575px){
+                                            &:nth-child(3){
+                                                display: none;
+                                            }
+                                        }
+                                        a.news-link{
+                                            display: block;
+                                            padding: 15px 0;
+                                            border-bottom: 1px solid #E7CDCD;
+                                            cursor: pointer;
+                                            position: relative;
+                                            @media screen and (max-width: 575px){
+                                                padding: 10px 0;
+                                            }
+                                            &::before{
+                                                content: "";
+                                                position: absolute;
+                                                background-color: #E60000;
+                                                transition: all 0.4s ease;
+                                                width: 0%;
+                                                bottom: 0;
+                                                right: 0;
+                                                height: 1px;
+                                            }
+                                            &:hover::before{
+                                                right: auto;
+                                                left: 0;
+                                                width: 100%;
+                                            }
+                                            .date{
+                                                color: #998A8A;
+                                                margin-bottom: 10px;
+                                                @media screen and (max-width: 575px){
+                                                    font-size: 14px;
+                                                    margin-bottom: 5px;
+                                                }
+                                            }
+                                            .content{
+                                                font-size: 18px;
+                                                font-weight: bold;
+                                                overflow: hidden;
+                                                text-overflow: ellipsis;
+                                                white-space: nowrap;
+                                                color: #544545;
+                                                @media screen and (max-width: 575px){
+                                                    font-size: 14px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &.section-board{
+                width: 100%;
+                padding-top: 100px;
+                padding-bottom: 20px;
+                background-color: #F8F6F2;
+                background-image: url('../images/background/section_news_left_bg.png'), url('../images/background/section_news_right_bg.png');
+                background-position: left bottom, 97% 12%;
+                background-size: 22.3958333%, 14.7395833%;
+                background-repeat: no-repeat;
+                position: relative;
+                z-index: 1;
+                @media screen and (max-width: 1024px){
+                    padding-top: 20px;
+                }
+                @media screen and (max-width: 575px){
+                    background-image: none;
+                    padding-top: 30px;
+                }
+                .board-container{
+                    max-width: 1200px;
+                    width: 100%;
+                    margin: 0 auto;
+                    position: relative;
+                    .board-title{
+                        display: flex;
+                        align-items: center;
+                        padding: 20px 30px;
+                        @media screen and (max-width: 1024px) {
+                            padding: 20px 40px;
+                        }
+                        @media screen and (max-width: 575px) {
+                            padding: 20px 15px;
+                        }
+                        h2{
+                            margin-bottom: 0;
+                            font-weight: bold;
+                            font-size: 28px;
+                            @media screen and (max-width: 575px) {
+                                font-size: 22px;
+                            }
+                        }
+                    }
+                    .board-content{
+                        width: calc(100% - 158px);
+                        background-color: #fff;
+                        box-shadow: 0 0 15px rgba(0,0,0,0.1);
+                        border-radius: 14px;
+                        position: relative;
+                        margin: 0 auto;
+                        padding: 30px;
+                        @media screen and (max-width: 1024px) {
+                            width: calc(100% - 80px);
+                            padding: 30px 0;
+                            &::before, &::after{
+                                display: none;
+                            }
+                        }
+                        @media screen and (max-width: 575px) {
+                            width: calc(100% - 30px);
+                            padding: 30px 0;
+                        }
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            width: 87.3076923%;
+                            height: 376px;
+                            border-bottom-left-radius: 60px;
+                            bottom: -45px;
+                            left: -45px;
+                            background-color: #CE1D1D;
+                            z-index: -1;
+                        }
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            width: 309px;
+                            height: 280px;
+                            border-top-right-radius: 60px;
+                            top: -45px;
+                            right: -45px;
+                            background-color: #FEE4E2;
+                            z-index: -1;
+                        }
+                        #board-tabs{
+                            .board-tabs-container{
+                                display: flex;
+                                align-items: center;
+                                position: relative;
+                                @media screen and (max-width: 1024px){
+                                    padding: 0 15px;
+                                }
+                                @media screen and (max-width: 920px){
+                                    padding: 0 40px;
+                                }
+                                a#board-tabs-btn-left{
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                }
+                                a#board-tabs-btn-right{
+                                    position: absolute;
+                                    top: 0;
+                                    right: 0;
+                                }
+                                a.board-tabs-btn{
+                                    min-width: 40px;
+                                    height: 57px;
+                                    padding-bottom: 10px;
+                                    display: none;
+                                    justify-content: center;
+                                    align-items: center;
+                                    font-size: 24px;
+                                    color: #E9E5DD;
+                                    &:hover{
+                                        color: #bbbbbb;
+                                    }
+                                    @media screen and (max-width: 920px){
+                                        display: flex;
+                                    }
+                                }
+                                .board-tabs-box{
+                                    position: relative;
+                                    width: 100%;
+                                    .under-line{
+                                        position: absolute;
+                                        bottom: 10px;
+                                        left: 0;
+                                        width: 100%;
+                                        height: 1px;
+                                        background-color: #E9E5dd;
+                                    }
+                                    ul.board-tabs-list{
+                                        width: 100%;
+                                        display: inline-flex;
+                                        position: relative;
+                                        padding-bottom: 10px;
+                                        white-space: nowrap;
+                                        overflow-x: auto;
+                                        &::-webkit-scrollbar{
+                                            display: none;
+                                        }
+                                        -ms-overflow-style: -ms-autohiding-scrollbar;
+                                        -ms-overflow-style: none;
+                                        scrollbar-width: none;
+                                        & li + li{
+                                            margin-left: 20px;
+                                        }
+                                        li.board-tabs-item{
+                                            padding: 10px 2.6%;
+                                            position: relative;
+                                            cursor: pointer;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            font-weight: bold;
+                                            font-size: 18px;
+                                            @media screen and (max-width: 575px){
+                                                font-size: 16px;
+                                            }
+                                            &:hover{
+                                                color: #E60000;
+                                            }
+                                            &.ui-state-active{
+                                                color: #E60000;
+                                            }
+                                            a{
+                                                position: absolute;
+                                                width: 100%;
+                                                height: 100%;
+                                                top: 0;
+                                                left: 0;
+                                            }
+                                        }
+                                        .board-tabs-active-line{
+                                            position: absolute;
+                                            bottom: 10px;
+                                            left: 0;
+                                            width: auto;
+                                            height: 4px;
+                                            background-color: #E60000;
+                                            transition: all 0.3s ease;
+                                            &::before{
+                                                content: "";
+                                                position: absolute;
+                                                bottom: -9px;
+                                                left: 50%;
+                                                transform: translateX(-50%);
+                                                width: 0;
+                                                height: 0;
+                                                border-style: solid;
+                                                border-width: 10px 5px 0 5px;
+                                                border-color: #e60000 transparent transparent transparent;
+                                                line-height: 0px;
+                                                _border-color: #e60000 #000000 #000000 #000000;
+                                                _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .board-tabs-content{
+                                @media screen and (max-width: 1024px){
+                                    padding: 0 15px;
+                                }
+                                ul.board-list{
+                                    li.board-item{
+                                        a.board-link{
+                                            display: flex;
+                                            align-items: center;
+                                            padding: 20px 0;
+                                            border-bottom: 1px solid #E9E5DD;
+                                            position: relative;
+                                            @media screen and (max-width: 575px){
+                                                flex-direction: column;
+                                                align-items: flex-start;
+                                                font-size: 14px;
+                                                padding: 15px 0;
+                                            }
+                                            &::before{
+                                                content: "";
+                                                position: absolute;
+                                                background-color: #E60000;
+                                                transition: all 0.4s ease;
+                                                width: 0%;
+                                                bottom: 0;
+                                                right: 0;
+                                                height: 1px;
+                                            }
+                                            &:hover::before{
+                                                right: auto;
+                                                left: 0;
+                                                width: 100%;
+                                            }
+                                            .date{
+                                                color: #998A8A;
+                                                width: 110px;
+                                                text-align: left;
+                                                @media screen and (max-width: 575px){
+                                                    width: 95px;
+                                                }
+                                            }
+                                            .tag{
+                                                width: 110px;
+                                                height: 33px;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                border-radius: 50px;
+                                                color: #E60000;
+                                                border: 1px solid #E60000;
+                                                margin-right: 20px;
+                                                @media screen and (max-width: 575px){
+                                                    width: 95px;
+                                                    height: 21px;
+                                                }
+                                            }
+                                            .content{
+                                                font-size: 18px;
+                                                font-weight: bold;
+                                                color: #544545;
+                                                display: flex;
+                                                align-items: center;
+                                                @media screen and (max-width: 575px){
+                                                    font-size: 14px;
+                                                    margin-top: 10px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .slogan{
+                        font-size: 26px;
+                        text-align: right;
+                        padding: 0 15px;
+                        padding-top: 84px;
+                        @media screen and (max-width: 1024px){
+                            padding-top: 39px;
+                        }
+                        @media screen and (max-width: 575px){
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modal{
+    padding-right: 0 !important;
+    .modal-dialog{
+        @media screen and (min-width: 576px){
+            max-width: 560px;
+            margin: 0 auto;
+        }
+        @media screen and (max-width: 576px){
+            margin: auto 0;
+        }
+        &.modal-dialog-centered{
+            min-height: 100%;
+        }
+        .modal-content{
+            width: calc(100% - 30px);
+            max-width: 415px;
+            margin: 0 auto;
+            border: 0;
+            .modal-close{
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-align-items: center;
+                align-items: center;
+                cursor: pointer;
+                &::before, &::after{
+                    content: "";
+                    position: absolute;
+                    width: 20px;
+                    height: 1.5px;
+                    background-color: #fff;
+                }
+                &::before{
+                    transform: rotate(45deg);
+                }
+                &::after{
+                    transform: rotate(135deg);
+                }
+            }
+            .modal-header{
+                padding: 10px;
+                background-color: #D61E1E;
+                h5.modal-title{
+                    margin: 0 auto;
+                    color: #fff;
+                    display: flex;
+                    align-items: center;
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+            }
+            .modal-body{
+                text-align: center;
+                padding: 25px 10px;
+                font-size: 16px;
+                .modal-btn{
+                    width: 88px;
+                    height: 40px;
+                    border: 0;
+                    font-weight: bold;
+                    font-size: 18px;
+                    margin: 0 5px;
+                    border-radius: 4px;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    &.gray{
+                        background-color: #F3EEEE;
+                        &:hover{
+                            background-color: #DAD7D7;
+                        }
+                    }
+                    &.red{
+                        background-color: #D61E1E;
+                        color: #fff;
+                        &:hover{
+                            background-color: #E60000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.swiper-container{
+    &.swiper-container-pc{
+        width: 100%;
+        height: auto;
+        .swiper-wrapper{
+            .swiper-slide{
+                width: 100%;
+                background-size: contain;
+                -webkit-transform: translateZ(0);
+                -webkit-backface-visibility: hidden;
+                &::before{
+                    content: "";
+                    display: block;
+                    padding-top: 29.4791667%;
+                }
+            }
+        }
+        .swiper-bundle-container{
+            position: absolute;
+            bottom: 15px;
+            right: calc(50% - 600px);
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            @media screen and (max-width: 1500px){
+                right: 120px;
+            }
+            @media screen and (max-width: 1024px) {
+                right: 50%;
+                transform: translateX(50%);
+                bottom: 10px;
+            }
+            .swiper-button-prev, .swiper-button-next{
+                width: 36px;
+                background-size: 25%;
+                position: relative;
+                margin-top: 0;
+                &:hover{
+                    &::before{
+                        color: #E60000;
+                    }
+                }
+            }
+            .swiper-button-prev{
+                background-image: none;
+                left: 0;
+                &::before{
+                    content: "\f053";
+                    font-family: "Font Awesome 5 Pro";
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 18px;
+                    color: #EE5142;
+                }
+            }
+            .swiper-button-next{
+                background-image: none;
+                right: 0;
+                &::before{
+                    content: "\f054";
+                    font-family: "Font Awesome 5 Pro";
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 18px;
+                    color: #EE5142;
+                }
+            }
+            .swiper-pagination{
+                position: relative;
+                display: inline-block;
+                margin-left: 5px;
+                width: 200px;
+                display: flex;
+                .swiper-pagination-bullet{
+                    flex: 1;
+                    margin: 0 3px;
+                    width: 33px;
+                    height: 20px;
+                    background-color: transparent;
+                    border-radius: 0;
+                    vertical-align: middle;
+                    position: relative;
+                    &:hover{
+                        opacity: 1;
+                        &::before{
+                            background-color: #E60000;
+                        }
+                    }
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                        background-color: #C4C4C4;
+                        width: 100%;
+                        height: 2px;
+                    }
+                    &.swiper-pagination-bullet-active{
+                        &::before{
+                            background-color: #E60000;
+                        }
+                    }
+                }
+            }
+            .swiper-count{
+                width: 30px;
+                text-align: center;
+                font-size: 22px;
+                color: #E60000;
+            }
+        }
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+    }
+    &.swiper-container-mobile{
+        width: 100%;
+        height: auto;
+        display: none;
+        .swiper-wrapper{
+            .swiper-slide{
+                width: 100%;
+                background-size: contain;
+                -webkit-transform: translateZ(0);
+                -webkit-backface-visibility: hidden;
+                &::before{
+                    content: "";
+                    display: block;
+                    padding-top: 46.6666667%;
+                }
+            }
+        }
+        .swiper-bundle-container{
+            position: absolute;
+            right: 50%;
+            transform: translateX(50%);
+            bottom: 10px;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            .swiper-button-prev, .swiper-button-next{
+                width: 36px;
+                background-size: 25%;
+                position: relative;
+                margin-top: 0;
+            }
+            .swiper-button-prev{
+                background-image: url("../images/icon/prev_button.svg") !important;
+                left: 0;
+            }
+            .swiper-button-next{
+                background-image: url("../images/icon/next_button.svg") !important;
+                right: 0;
+            }
+            .swiper-pagination{
+                position: relative;
+                display: inline-block;
+                .swiper-pagination-bullet{
+                    margin: 0 3px;
+                    width: 15px;
+                    height: 3px;
+                    background-color: rgba(0,0,0,0.4);
+                    border-radius: 0;
+                    vertical-align: middle;
+                    &.swiper-pagination-bullet-active{
+                        background-color: #E60000;
+                    }
+                }
+            }
+        }
+        @media screen and (max-width: 767px) {
+            display: block;
+        }
+    }
+}
+
+a.read-more{
+    cursor: pointer;
+    color: #E60000;
+    display: inline-flex;
+    align-items: center;
+    @media screen and (max-width: 575px){
+        font-size: 14px;
+    }
+    > span{
+        position: relative;
+        &::before{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+        }
+    }
+    &:hover{
+        >span{
+            &::before{
+                background-color: #E60000;
+            }
+        }
+    }
+    &:focus{
+        color: #544545;
+        >span{
+            &::before{
+                background-color: #544545;
+            }
+        }
+    }
+}

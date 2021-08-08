@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no, viewport-fit=cover' name='viewport' />
+        ##include('./components/meta.html', { "title": "遠東商銀 - 投資理財網", "description": "",
+        "keyword": "", "url": "", "share-image": "" })
+        <link rel="stylesheet" href="./lib/fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+        <!-- build:css ./styles/app.css -->
+        <link rel="stylesheet" href="./styles/app.css">
+        <!-- endbuild -->
+    </head>
+    <body>
+        <div class="inside-page">
+
+            <!-- header -->
+            ##include('./components/header.html')
+
+            <!-- 側邊欄 -->
+            ##include('./components/sidebar.html')
+            ##include('./components/sidebarModal.html')
+
+            <div class="inside-masthead">
+                <div class="masthead-container">
+
+                    <!-- 麵包屑 -->
+                    <nav aria-label="breadcrumb">
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="/"><i class="common-icon home icon-sm"></i></a></li>
+                            <li class="breadcrumb-item active" aria-current="page">產品投資公告</li>
+                        </ul>
+                    </nav>
+
+                    <!-- 大標題 -->
+                    <h1 class="main-title">產品投資公告</h1>
+
+                    <div class="inside-content">
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer -->
+            ##include('./components/footer.html')
+
+            <!-- backToTop -->
+            ##include('./components/backToTop.html')
+
+        </div>
+    </body>
+</html>
