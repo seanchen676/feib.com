@@ -104,6 +104,9 @@
                         @media screen and (max-width: 575px){
                             padding: 0 15px;
                         }
+                        @media screen and (max-width: 374px){
+                            padding: 0 10px;
+                        }
                         #ranking-tabs{
                             ul.ranking-tabs-list{
                                 display: flex;
@@ -178,15 +181,27 @@
                                                     &:not(:nth-child(2)){
                                                         width: 90px;
                                                     }
+                                                    &:last-child{
+                                                        width: 110px;
+                                                    }
                                                 }
                                                 @media screen and (max-width: 575px){
-                                                    font-size: 12px;
+                                                    font-size: 13px;
                                                     padding: 12px 4px;
                                                     &:not(:nth-child(2)){
-                                                        width: 55px;
+                                                        width: 60px;
                                                     }
                                                     &:last-child{
                                                         width: 80px;
+                                                    }
+                                                }
+                                                @media screen and (max-width: 374px){
+                                                    padding: 12px 2px;
+                                                    &:not(:nth-child(2)){
+                                                        width: 56px;
+                                                    }
+                                                    &:last-child{
+                                                        width: 70px;
                                                     }
                                                 }
                                             }
@@ -257,25 +272,69 @@
                                                     display: flex;
                                                     align-items: center;
                                                     justify-content: center;
-                                                    &.red{
+                                                    position: relative;
+                                                    min-width: 90px;
+                                                    padding-right: 15px;
+                                                    @media screen and (max-width: 575px){
+                                                        padding-right: 10px;
+                                                    }
+                                                    @media screen and (max-width: 767px){
+                                                        min-width: auto;
+                                                    }
+                                                    &.up{
                                                         color: #E60000;
+                                                        &::before{
+                                                            width: 0;
+                                                            height: 0;
+                                                            border-style: solid;
+                                                            border-width: 0 6px 10.4px 6px;
+                                                            border-color: transparent transparent #e60000 transparent;
+                                                            @media screen and (max-width: 575px){
+                                                                border-width: 0 5px 8.7px 5px;
+                                                            }
+                                                        }
                                                     }
-                                                    &.green{
+                                                    &.down{
                                                         color: #1AB11E;
-                                                        i{
-                                                            transform: rotate(180deg);
+                                                        &::before{
+                                                            width: 0;
+                                                            height: 0;
+                                                            border-style: solid;
+                                                            border-width: 10.4px 6px 0 6px;
+                                                            border-color: #1ab11e transparent transparent transparent;
+                                                            @media screen and (max-width: 575px){
+                                                                border-width: 8.7px 5px 0 5px;
+                                                            }
                                                         }
                                                     }
-                                                    .count{
-                                                        min-width: 80px;
-                                                        text-align: center;
-                                                        @media screen and (max-width: 767px){
-                                                            min-width: auto;
-                                                        }
+                                                    &::before{
+                                                        content: "";
+                                                        position: absolute;
+                                                        top: 50%;
+                                                        right: 0;
+                                                        transform: translateY(-50%);
                                                     }
-                                                    i{
-                                                        font-size: 12px;
-                                                    }
+                                                    // .count{
+                                                    //     min-width: 80px;
+                                                    //     text-align: center;
+                                                    //     @media screen and (max-width: 767px){
+                                                    //         min-width: auto;
+                                                    //     }
+                                                    // }
+                                                    // .triangle{
+                                                    //     width: 0;
+                                                    //     height: 0;
+                                                    //     border-style: solid;
+                                                    //     &.up{
+                                                    //         border-width: 0 6px 10.4px 6px;
+                                                    //         border-color: transparent transparent #e60000 transparent;
+                                                    //     }
+                                                    //     &.down{
+                                                    //         border-width: 10.4px 6px 0 6px;
+                                                    //         border-color: #1ab11e transparent transparent transparent;
+
+                                                    //     }
+                                                    // }
                                                 }
                                                 &:not(:nth-child(2)){
                                                     width: 115px;
@@ -285,19 +344,37 @@
                                                     &:not(:nth-child(2)){
                                                         width: 90px;
                                                     }
+                                                    &:last-child{
+                                                        width: 110px;
+                                                    }
                                                 }
                                                 @media screen and (max-width: 575px){
-                                                    font-size: 12px;
+                                                    font-size: 13px;
                                                     padding: 12px 4px;
                                                     &:not(:nth-child(2)){
-                                                        width: 55px;
+                                                        width: 60px;
                                                     }
                                                     &:last-child{
                                                         width: 80px;
                                                     }
                                                 }
+                                                @media screen and (max-width: 374px){
+                                                    &:not(:nth-child(2)){
+                                                        width: 56px;
+                                                    }
+                                                    &:last-child{
+                                                        width: 70px;
+                                                    }
+                                                }
                                             }
                                         }
+                                    }
+                                }
+                                .read-more-container{
+                                    text-align: right;
+                                    padding-bottom: 10px;
+                                    @media screen and (max-width: 1024px){
+                                        display: none;
                                     }
                                 }
                             }
@@ -1035,6 +1112,7 @@
                                                 transform: translateY(-50%);
                                                 color: #E60000;
                                                 border: 0;
+                                                pointer-events: none;
                                             }
                                             select{
                                                 background-color: #fff;
@@ -1329,7 +1407,7 @@
                         background-color: #FFE4E2;
                         border-top-right-radius: 16px;
                         border-bottom-right-radius: 16px;
-                        @media screen and (max-width: 767px) {
+                        @media screen and (max-width: 1024px) {
                             display: none;
                         }
                     }
@@ -1346,11 +1424,11 @@
                         background-size: cover;
                         background-repeat: no-repeat;
                         background-position: center;
-                        @media screen and (max-width: 1024px){
-                            top: 30px;
-                            width: 38%;
-                        }
-                        @media screen and (max-width: 767px) {
+                        // @media screen and (max-width: 1024px){
+                        //     top: 30px;
+                        //     width: 38%;
+                        // }
+                        @media screen and (max-width: 1024px) {
                             width: 100%;
                             top: 78px;
                             display: block;
@@ -1394,14 +1472,17 @@
                         margin: 0 auto;
                         height: 431px;
                         background-color: transparent;
+                        // @media screen and (max-width: 1024px) {
+                        //     padding: 30px 15px;
+                        // }
                         @media screen and (max-width: 1024px) {
-                            padding: 30px 15px;
-                        }
-                        @media screen and (max-width: 767px) {
                             height: auto;
                             width: calc(100% - 80px);
                             background-color: #FFE4E2;
                             padding: 20px;
+                            margin-top: 300px;
+                        }
+                        @media screen and (max-width: 767px) {
                             margin-top: 250px;
                         }
                         @media screen and (max-width: 575px) {
@@ -1415,10 +1496,10 @@
                         }
                         #news-tabs{
                             max-width: calc(100% - 45%);
+                            // @media screen and (max-width: 1024px){
+                            //     max-width: calc(100% - 38%);
+                            // }
                             @media screen and (max-width: 1024px){
-                                max-width: calc(100% - 38%);
-                            }
-                            @media screen and (max-width: 767px){
                                 max-width: 100%;
                             }
                             ul.news-tabs-list{
@@ -1541,6 +1622,7 @@
                 z-index: 1;
                 @media screen and (max-width: 1024px){
                     padding-top: 20px;
+                    background-image: none;
                 }
                 @media screen and (max-width: 575px){
                     background-image: none;
@@ -1788,11 +1870,13 @@
                                                 font-size: 18px;
                                                 font-weight: bold;
                                                 color: #544545;
-                                                display: flex;
-                                                align-items: center;
                                                 @media screen and (max-width: 575px){
                                                     font-size: 14px;
                                                     margin-top: 10px;
+                                                }
+                                                i{
+                                                    display: inline-block;
+                                                    vertical-align: middle;
                                                 }
                                             }
                                         }
@@ -2043,7 +2127,7 @@
                 &::before{
                     content: "";
                     display: block;
-                    padding-top: 46.6666667%;
+                    padding-top: 49.3333333%;
                 }
             }
         }

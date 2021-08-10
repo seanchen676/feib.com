@@ -27,8 +27,8 @@
         &::after{
             content: "";
             width: 100%;
-            // height: calc(100% - 535px);
-            height: auto;
+            height: calc(100% - 535px);
+            // height: auto;
             position: absolute;
             top: 535px;
             left: 0;
@@ -44,7 +44,7 @@
                 background-size: 206px;
             }
             &::after{
-                // height: calc(100% - 345px);
+                height: calc(100% - 345px);
                 top: 345px;
             }
         }
@@ -60,7 +60,7 @@
                 background-size: 105px;
             }
             &::after{
-                // height: calc(100% - 207px);
+                height: calc(100% - 207px);
                 top: 207px;
             }
         }
@@ -141,7 +141,7 @@
             }
             .inside-content{
                 width: calc(100% - 80px);
-                padding: 50px;
+                padding: 50px 70px;
                 background-color: #fff;
                 border-radius: 24px;
                 box-shadow: 0 0 15px rgba(0,0,0,0.15);

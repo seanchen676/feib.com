@@ -11,6 +11,10 @@
         <!-- build:css ./styles/app.css -->
         <link rel="stylesheet" href="./styles/app.css">
         <!-- endbuild -->
+
+        <!-- build:js ./scripts/inside.js -->
+        <script src="./scripts/inside.js"></script>
+        <!-- endbuild -->
     </head>
     <body>
         <div class="inside-page">
@@ -29,15 +33,138 @@
                     <nav aria-label="breadcrumb">
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a href="/"><i class="common-icon home icon-sm"></i></a></li>
-                            <li class="breadcrumb-item active" aria-current="page">產品投資公告</li>
+                            <li class="breadcrumb-item active" aria-current="page">投資產品公告</li>
                         </ul>
                     </nav>
 
                     <!-- 大標題 -->
-                    <h1 class="main-title">產品投資公告</h1>
+                    <h1 class="main-title">投資產品公告</h1>
 
                     <div class="inside-content">
-
+                        <div class="investmentBoard-content">
+                            <div class="filter-bar">
+                                <div class="filter-type">
+                                    <label>請選擇</label>
+                                    <div class="select-group">
+                                        <select>
+                                            <option value="基金">基金</option>
+                                            <option value="ETF">ETF</option>
+                                            <option value="國外股票">國外股票</option>
+                                            <option value="國外債券">國外債券</option>
+                                            <option value="存款">存款</option>
+                                            <option value="結構型商品">結構型商品</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <form class="filter-keyword">
+                                    <label>關鍵字查詢</label>
+                                    <input type="text" />
+                                    <button type="submit">GO</button>
+                                </form>
+                            </div>
+                            <ul class="board-list">
+                                <li class="board-item">
+                                    <a class="board-link" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="date">2021/03/04</div>
+                                            <div class="tag">基金</div>
+                                        </div>
+                                        <div class="content">陸加快功率半導體自製，兩大IGBT廠商推進A股上市<i class="common-icon pdf mgl-2"></i></div>
+                                    </a>
+                                </li>
+                                <li class="board-item">
+                                    <a class="board-link" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="date">2021/02/09</div>
+                                            <div class="tag">基金</div>
+                                        </div>
+                                        <div class="content">韓國央行意外降息一碼至3% 營建與消費族群將受激勵</div>
+                                    </a>
+                                </li>
+                                <li class="board-item">
+                                    <a class="board-link" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="date">2021/02/04</div>
+                                            <div class="tag">基金</div>
+                                        </div>
+                                        <div class="content">WFA將成2021年流行詞，舊金山辦公室轉租增、租金降</div>
+                                    </a>
+                                </li>
+                                <li class="board-item">
+                                    <a class="board-link" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="date">2021/02/04</div>
+                                            <div class="tag">基金</div>
+                                        </div>
+                                        <div class="content">WFA將成2021年流行詞，舊金山辦公室轉租增、租金降</div>
+                                    </a>
+                                </li>
+                                <li class="board-item">
+                                    <a class="board-link" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="date">2021/02/04</div>
+                                            <div class="tag">基金</div>
+                                        </div>
+                                        <div class="content">WFA將成2021年流行詞，舊金山辦公室轉租增、租金降</div>
+                                    </a>
+                                </li>
+                                <li class="board-item">
+                                    <a class="board-link" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="date">2021/03/04</div>
+                                            <div class="tag">基金</div>
+                                        </div>
+                                        <div class="content">陸加快功率半導體自製，兩大IGBT廠商推進A股上市<i class="common-icon pdf mgl-2"></i></div>
+                                    </a>
+                                </li>
+                                <li class="board-item">
+                                    <a class="board-link" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="date">2021/02/09</div>
+                                            <div class="tag">基金</div>
+                                        </div>
+                                        <div class="content">韓國央行意外降息一碼至3% 營建與消費族群將受激勵</div>
+                                    </a>
+                                </li>
+                                <li class="board-item">
+                                    <a class="board-link" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="date">2021/02/04</div>
+                                            <div class="tag">基金</div>
+                                        </div>
+                                        <div class="content">WFA將成2021年流行詞，舊金山辦公室轉租增、租金降</div>
+                                    </a>
+                                </li>
+                                <li class="board-item">
+                                    <a class="board-link" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="date">2021/02/04</div>
+                                            <div class="tag">基金</div>
+                                        </div>
+                                        <div class="content">WFA將成2021年流行詞，舊金山辦公室轉租增、租金降</div>
+                                    </a>
+                                </li>
+                                <li class="board-item">
+                                    <a class="board-link" href="javascript:;">
+                                        <div class="d-flex align-items-center">
+                                            <div class="date">2021/02/04</div>
+                                            <div class="tag">基金</div>
+                                        </div>
+                                        <div class="content">WFA將成2021年流行詞，舊金山辦公室轉租增、租金降</div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <nav class="board-pagination">
+                                <ul class="pagination">
+                                    <li class="page-item active"><a class="page-link" href="javascript:;">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="javascript:;">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="javascript:;">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="javascript:;">4</a></li>
+                                    <li class="page-item"><a class="page-link" href="javascript:;">5</a></li>
+                                    <li class="page-item"><a class="page-link" href="javascript:;">6</a></li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
                 </div>
             </div>

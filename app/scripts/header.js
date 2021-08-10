@@ -29,7 +29,7 @@ $( function() {
     })
 
     $('.anchor-link').on('click', function() {
-        var hrefLink = $(this).attr("href");
+        var hrefLink = $(this).attr('href');
         $('html,body').animate({
             scrollTop: $(hrefLink).offset().top
         }, 500)
