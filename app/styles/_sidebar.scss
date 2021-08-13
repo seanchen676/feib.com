@@ -1,38 +1,72 @@
-ul.sidebar-list{
-    padding: 10px 0;
-    background-color: #fff;
+.sidebar{
     position: fixed;
-    z-index: 1000;
     top: 40%;
     right: 0;
-    transform: translateY(-50%);
+    transform: translate(0,-50%);
+    z-index: 1000;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    z-index: 2;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    li.sidebar-item{
-        margin-bottom: 5px;
-        font-size: 14px;
-        font-weight: bold;
-        color: #544545;
-        &:last-child{
-            margin-bottom: 0;
-        }
-        .sidebar-link{
-            display: block;
-            padding: 5px 10px 5px 15px;
-            cursor: pointer;
-            &:hover, &:active{
-                color: #EE5142;
+    background-color: #fff;
+    &.sidebar-close{
+        transform: translate(81px, -50%);
+        .sidebar-toggle{
+            background-color: rgba(245, 112, 98, 0.8);
+            &::before{
+                content: "\f053";
             }
-            .sidebar-icon{
-                width: 44px;
-                height: 44px;
-                margin: 0 auto 5px auto;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: #F3EEEE;
-                border-radius: 10px;
+            &:hover{
+                background-color: rgba(245, 112, 98, 1);
+            }
+        }
+    }
+    .sidebar-toggle{
+        background-color: rgba(205, 175, 110, 0.8);
+        width: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        &::before{
+            content: "\f054";
+            font-family: "Font Awesome 5 Pro";
+            color: #fff;
+        }
+        &:hover{
+            background-color: rgba(205, 175, 110, 1);
+        }
+    }
+    ul.sidebar-list{
+        padding: 10px 0;
+        li.sidebar-item{
+            margin-bottom: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            color: #544545;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            .sidebar-link{
+                display: block;
+                padding: 5px 10px 5px 15px;
+                cursor: pointer;
+                &:hover, &:active{
+                    color: #EE5142;
+                }
+                .sidebar-icon{
+                    width: 44px;
+                    height: 44px;
+                    margin: 0 auto 5px auto;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #F3EEEE;
+                    border-radius: 10px;
+                }
             }
         }
     }

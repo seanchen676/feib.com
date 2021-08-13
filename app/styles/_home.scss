@@ -6,32 +6,39 @@
     @media screen and (max-width: 767px) {
         padding-top: 50px;
     }
-    ul.sidebar-list{
+    .sidebar{
         @media screen and (max-width: 767px) {
             position: relative;
-            transform: translateY(0);
-            border-top-left-radius: 0;
-            border-bottom-left-radius: 0;
+            transform: translate(0,0);
             box-shadow: none;
-            display: flex;
-            padding: 0 10px;
-            z-index: 1;
         }
-        li.sidebar-item{
+        .sidebar-toggle{
             @media screen and (max-width: 767px) {
-                flex: 1;
-                text-align: center;
-                border-bottom: 1px solid #E2DED4;
-                margin-bottom: 0;
+                display: none;
             }
-            .sidebar-link{
+        }
+        ul.sidebar-list{
+            @media screen and (max-width: 767px) {
+                display: flex;
+                padding: 0 10px;
+                width: 100%;
+            }
+            li.sidebar-item{
                 @media screen and (max-width: 767px) {
-                    padding: 5px;
+                    flex: 1;
+                    text-align: center;
+                    border-bottom: 1px solid #E2DED4;
+                    margin-bottom: 0;
                 }
-                .sidebar-icon{
+                .sidebar-link{
                     @media screen and (max-width: 767px) {
-                        background-color: transparent;
-                        margin: 0 auto;
+                        padding: 5px;
+                    }
+                    .sidebar-icon{
+                        @media screen and (max-width: 767px) {
+                            background-color: transparent;
+                            margin: 0 auto;
+                        }
                     }
                 }
             }
@@ -141,8 +148,7 @@
                                         @media screen and (max-width: 575px){
                                             font-size: 16px;
                                             text-align: center;
-                                            margin: 0 auto;
-                                            width: 63px;
+                                            padding: 0 calc((100% - 63px) / 2);
                                         }
                                     }
                                     &.ui-state-active{
@@ -1420,7 +1426,7 @@
                         right: 0;
                         border-top-left-radius: 16px;
                         border-bottom-left-radius: 16px;
-                        background-image: url("../images/background/section_news_bg_pc.jpg");
+                        background-image: url("../images/background/section_news_pc_bg.jpg");
                         background-size: cover;
                         background-repeat: no-repeat;
                         background-position: center;
@@ -1435,7 +1441,7 @@
                             padding-top: 68.2291667%;
                             border-top-left-radius: 0;
                             border-bottom-left-radius: 0;
-                            background-image: url("../images/background/section_news_bg_mobile.jpg");
+                            background-image: url("../images/background/section_news_mobile_bg.jpg");
                             background-repeat: no-repeat;
                             background-position: center;
                             height: auto;
@@ -2001,13 +2007,20 @@
         .swiper-wrapper{
             .swiper-slide{
                 width: 100%;
-                background-size: contain;
+                background-size: cover;
                 -webkit-transform: translateZ(0);
                 -webkit-backface-visibility: hidden;
                 &::before{
                     content: "";
                     display: block;
                     padding-top: 29.4791667%;
+                }
+                a.swiper-link{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
                 }
             }
         }
@@ -2121,13 +2134,20 @@
         .swiper-wrapper{
             .swiper-slide{
                 width: 100%;
-                background-size: contain;
+                background-size: cover;
                 -webkit-transform: translateZ(0);
                 -webkit-backface-visibility: hidden;
                 &::before{
                     content: "";
                     display: block;
                     padding-top: 49.3333333%;
+                }
+                a.swiper-link{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
                 }
             }
         }

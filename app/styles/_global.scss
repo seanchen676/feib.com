@@ -31,7 +31,9 @@ body{
     font-family: 'Montserrat','微軟正黑體', sans-serif;
     color: #555;
     overflow-x: hidden;
-
+    &.hide{
+        overflow: hidden;
+    }
 }
 
 @for $i from 0 through 8 {
