@@ -20,7 +20,12 @@
         <div class="inside-page">
 
             <!-- header -->
-            ##include('./components/header.html')
+            ##include('./components/header.html', {
+                "href-news": "./index.html#section-board",
+                "href-fund": "./index.html#section-ranking-fund",
+                "href-config": "./index.html#section-ranking-config",
+                "href-best": "./index.html#section-ranking-best"
+            })
 
             <!-- 側邊欄 -->
             ##include('./components/sidebar.html')

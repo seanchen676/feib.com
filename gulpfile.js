@@ -136,7 +136,7 @@ function html() {
 
 function images() {
   return src(srcFilePath.img, { since: lastRun(images) }) // 'app/images/**/**'
-    .pipe($.imagemin())
+    // .pipe($.imagemin())
     .pipe($.if(!isProd, dest(tmpPath.img), dest(distPath.img))); // $.if(!isProd, dest('.tmp/images'), dest('dist/images'))
 }
 

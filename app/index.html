@@ -24,7 +24,12 @@
         <div class="home-page">
 
             <!-- header -->
-            ##include('./components/header.html')
+            ##include('./components/header.html', {
+                "href-news": "javascript:;",
+                "href-fund": "javascript:;",
+                "href-config": "javascript:;",
+                "href-best": "javascript:;"
+            })
 
             <!-- PC Swiper -->
             <div class="swiper-container swiper-container-pc">
@@ -69,9 +74,9 @@
                         <div class="ranking-content">
                             <div id="ranking-tabs">
                                 <ul class="ranking-tabs-list">
-                                    <li class="ranking-tabs-item" data-tab="fund"><a data-label="優質特選基金" href="#ranking-tabs-fund"></a></li>
-                                    <li class="ranking-tabs-item" data-tab="config"><a data-label="核心配置首選" href="#ranking-tabs-config"></a></li>
-                                    <li class="ranking-tabs-item" data-tab="best"><a data-label="本行熱銷排行" href="#ranking-tabs-best"></a></li>
+                                    <li class="ranking-tabs-item" data-tab="fund"><a data-label="優質特選基金" class="section-ranking-fund" href="#ranking-tabs-fund"></a></li>
+                                    <li class="ranking-tabs-item" data-tab="config"><a data-label="核心配置首選" class="section-ranking-config" href="#ranking-tabs-config"></a></li>
+                                    <li class="ranking-tabs-item" data-tab="best"><a data-label="本行熱銷排行" class="section-ranking-best" href="#ranking-tabs-best"></a></li>
                                 </ul>
                                 <div class="ranking-tabs-content" id="ranking-tabs-fund">
                                     <table class="table">
@@ -1520,7 +1525,7 @@
                 </section>
 
                 <!-- section-board -->
-                <section class="section section-board" id="section-board">
+                <section class="section section-board">
                     <div class="board-container">
                         <div class="board-title">
                             <i class="common-icon section-board icon-lg mgr-2"></i>
@@ -1575,8 +1580,8 @@
                                             </a>
                                         </li>
                                     </ul>
-                                    <div class="text-right pdt-3">
-                                        <a class="read-more" href="javascript:;"><i class="icon-readMore mgr-1"></i><span>查看更多</span></a>
+                                    <div class="text-right pdt-3" style="height: 40.6px;">
+                                        <!-- <a class="read-more" href="javascript:;"><i class="icon-readMore mgr-1"></i><span>查看更多</span></a> -->
                                     </div>
                                 </div>
                                 <div class="board-tabs-content" style="display: none;" id="board-tabs-fund">

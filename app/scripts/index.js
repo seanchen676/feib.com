@@ -259,4 +259,42 @@ $( function() {
     $('.community-link:first').bind('mouseenter mouseleave touchstart touchend', function(){
         $(this).parents('.community-list').siblings('.community-preview-img').toggleClass('active');
     })
+
+    var hash = window.location.hash.replace('#','.');
+    if(hash){
+        if(hash === '.section-board'){
+            smoothOffset(hash);
+            
+        }else{
+            smoothOffset('.section-ranking');
+            $(hash).click();
+        }
+    }
+
+    $('.section-ranking-link').on('click', function() {
+        var tabsName = $(this).data('tabs');
+        $(tabsName).click();
+    })
+
+    $('.anchor-link').on('click', function() {
+        var hrefLink =  $(this).data('href');
+        $('.menu').removeClass('menu-open');
+        $('.hamburger-box').removeClass('active');
+        $('body').removeClass('hide');
+        smoothOffset(hrefLink);
+    })
+
+    function smoothOffset(el) {
+        var scrollOffset = $(el).offset().top;
+        var scrollFix = 0;
+        if($(window).width() <= 1024){
+            scrollFix = 60;
+        }
+        if($(window).width() <= 768){
+            scrollFix = 50;
+        }
+        $('html,body').animate({
+            scrollTop: scrollOffset - scrollFix
+        }, 500)
+    }
 });

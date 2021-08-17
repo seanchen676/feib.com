@@ -33,11 +33,4 @@ $( function() {
     $('.toggle-md').bind('click', function(){
         $(this).siblings('.menu-link').toggleClass('active');
     })
-
-    $('.anchor-link').on('click', function() {
-        var hrefLink = $(this).attr('href');
-        $('html,body').animate({
-            scrollTop: $(hrefLink).offset().top
-        }, 500)
-    })
 });
