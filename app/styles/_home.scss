@@ -1815,7 +1815,7 @@
                                 }
                                 ul.board-list{
                                     li.board-item{
-                                        a.board-link{
+                                        > a.board-link{
                                             display: flex;
                                             align-items: center;
                                             padding: 20px 0;
@@ -1873,10 +1873,14 @@
                                                     font-size: 14px;
                                                     margin-top: 10px;
                                                 }
-                                                i{
-                                                    display: inline-block;
-                                                    vertical-align: middle;
+                                                > a{
+                                                    > i{
+                                                        display: inline-block;
+                                                        vertical-align: middle;
+                                                    }
                                                 }
+                                                // i{
+                                                // }
                                             }
                                         }
                                     }
